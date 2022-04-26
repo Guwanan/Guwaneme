@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Guwaneme
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Guwaneme CTF" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.1"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Guwaneme</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/CTF/">/CTF/</a></li><li><a class="category-link" href="/categories/Crypto/">/Crypto/</a></li><li><a class="category-link" href="/categories/Daily/">/Daily/</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="友链">
+		                友链
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图图">
+		                图图
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Guwaneme" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://raw.githubusercontent.com/guwaneme/img/master/img/image-20220405235550070.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >流量分析</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p> （文章配图没有问题，请连接vpn，图床基于github，需要翻墙）</p>
+<p>流量分析 </p>
+<p>一：pcapng及常用流量分析软件wireshark介绍</p>
+<p>1.释义</p>
+<p>PCAPNG：PCAP Next Generation Dump File Format的缩写，意思是PCAP下一代文件格式，后缀名为.pcapng。是流量包后缀，通常用wireshark打开。</p>
+<p>Wireshark：是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并尽可能显示出最为详细的网络封包资料。Wireshark使用WinPCAP作为接口，直接与网卡进行数据报文交换。</p>
+<p>2.wireshark使用介绍</p>
+<p>1）显示过滤器 </p>
+<p>用很多不同的参数来作为匹配标准，比如 IP 地址、协议、端口号、某些协议头部的参数。此外，用户也用一些条件工具和串联运算符创建出更加复杂的表达式。用户可以将不同的表达式组合起来，让软件显示的数据包范围更加精确。在数据包列表面板中显示的所有数据包都可以用数据包中包含的字段进行过滤。常使用到的运算符及作用如下：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不等于</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>与</td>
+<td>and,&amp;&amp;</td>
+</tr>
+<tr>
+<td>或</td>
+<td>or,||</td>
+</tr>
+<tr>
+<td>非</td>
+<td>!.nor</td>
+</tr>
+</tbody></table>
+<p>（1）配置方法</p>
+<p>①借助于过滤器窗口：</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps3238.tmp.jpg" alt="img">            </p>
+<p>②借助于工具条输入栏：</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsD857.tmp.jpg" alt="img"></p>
+<p>③将数据包某个属性值指定为过滤条件</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps11E.tmp.jpg" alt="img"></p>
+<p>2）信息统计</p>
+<p>（1）协议分级</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps5113.tmp.jpg" alt="img"></p>
+<p>显示捕捉文件包含的所有协议的树状分支 </p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Protocol</td>
+<td>协议名称</td>
+</tr>
+<tr>
+<td>%Packets</td>
+<td>含有该协议的包数目在捕捉文件所有包所占的比例</td>
+</tr>
+<tr>
+<td>Packets</td>
+<td>含有该协议的包的数目</td>
+</tr>
+<tr>
+<td>Bytes</td>
+<td>含有该协议的字节数</td>
+</tr>
+<tr>
+<td>Mbit/s</td>
+<td>抓包时间内的协议带宽</td>
+</tr>
+<tr>
+<td>End Packets</td>
+<td>该协议中包的数目（作为文件的最高协议层）</td>
+</tr>
+<tr>
+<td>End Bytes</td>
+<td>该协议中的字节数（作为文件的最高协议层）</td>
+</tr>
+<tr>
+<td>End Mbit/s</td>
+<td>抓包时间内的协议带宽（作为文件的最高协议层）</td>
+</tr>
+</tbody></table>
+<p>为分析数据包的主要方向提供依据</p>
+<p>（2）Conversation（对话）</p>
+<p>查看发生于一特定端点的IP间的所有流量</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps7630.tmp.jpg" alt="img"></p>
+<p>另：查看收发大量数据流的 IP 地址。如果是你知道的服务器（你记得服务器的地址或地址范围），那问题就解决了；但也有可能只是某台设备正在扫描网络，或仅是一台产生过多数据的 PC。  - 查看扫描模式（scan pattern）。这可能是一次正常的扫描，如 SNMP 软件发送 ping 报文以查找网络，但通常扫描都不太好。</p>
+<p>（3）EndPoints（端点）</p>
+<p>这一工具列出了 Wireshark 发现的所有 endpoints 上的统计信息。</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps9BAB.tmp.jpg" alt="img"></p>
+<p>（4）HTTP</p>
+<p>HTTP ( Hyper Text Transfer Protocol ，也称为超文本传输协议) 是一种用于分布式、协作式和超媒体信息系统的应用层协议。 HTTP 是万维网的数据通信的基础。</p>
+<p>PacketCounter</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsE586.tmp.jpg" alt="img"></p>
+<p>二：ctf竞赛中常见题目类型及解题方法</p>
+<p>1.ping 报文信息  （icmp协议）</p>
+<p>方法一：根据流量包发现icmp协议后追踪数据并进行flag拼接</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsFC2C.tmp.png" alt="img"></p>
+<p>方法二：脚本处理，步骤为：过滤icmp协议包-&gt;导出特定分组（如上图为Data分组）-&gt;保存为flag.txt-&gt;脚本处理，附脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mport  pyshark</span><br><span class="line">cap = pyshark.FileCapture(&#x27;flag.pcapng&#x27;)</span><br><span class="line">for packet in cap:</span><br><span class="line">    data = &#x27;&#x27;+packet[packet.highest_layer].data</span><br><span class="line">    print(chr(int(data,16)),end=&#x27;&#x27;)</span><br><span class="line">cap.close()</span><br></pre></td></tr></table></figure>
+
+<p>2.流量包修复</p>
+<p>方法一：直接打开软件pcapfix修复即可。</p>
+<p>方法二：可以用网站在线修复：</p>
+<p><a target="_blank" rel="noopener" href="http://f00l.de/hacking/pcapfix.php">http://f00l.de/hacking/pcapfix.php</a></p>
+<p>3.上传/下载文件（蓝牙obex，http，难:文件的分段上传/下载）</p>
+<p>方法一：foremost分离提取数据</p>
+<p>方法二：①自动提取通过http传输的文件内容</p>
+<p>流程为：文件-&gt;导出对象-&gt;HTTP</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps1A64.tmp.jpg" alt="img"></p>
+<p>找到有价值的文件，点击Save进行保存，或者Save All保存所有对象再进入文件夹进行分析。</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps33F7.tmp.jpg" alt="img"></p>
+<p>②手动提取通过http传输文件内容</p>
+<p>选中http文件传输流量包，在分组详情中找到data,Line-based text, JPEG File Interchange Format, data:text/html层，鼠标右键点击 – 选中 导出分组字节流。</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps4DE9.tmp.jpg" alt="img"></p>
+<p>菜刀下载文件的流量，需要删除分组字节流前开头和结尾的X@Y字符，否则下载的文件会出错。鼠标右键点击 – 选中 显示分组字节</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps6635.tmp.jpg" alt="img"></p>
+<p>最后点击Save as按钮导出。</p>
+<p>4．sql注入攻击</p>
+<p>大致方法：根据sql注入语句判断过程，分析返回值与测试字符的ASCII码值，进行下一步操作，但是可能这些字符就是flag值</p>
+<p>方法一：flag较短时，一般考虑手工</p>
+<p>方法二：flag较长时，脚本跑，附脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">import urllib.parse</span><br><span class="line"> </span><br><span class="line"># 更改为自己从wireshark提取出的csv文件地址</span><br><span class="line">f = open(r&quot;123.txt&quot;)</span><br><span class="line">lines = f.readlines()</span><br><span class="line">datas = []</span><br><span class="line"># 转码, 保存进datas</span><br><span class="line">for line in lines:</span><br><span class="line">    datas.append(urllib.parse.unquote(line))</span><br><span class="line">    lines = []  # 懒得改, 就复用一下, 这个lines保存注入flag的url</span><br><span class="line">for i in range(len(datas)):  # 提取出注入flag的url</span><br><span class="line">    if datas[i].find(&quot;isg.flags ORDER BY `value` LIMIT 0,1),1,1))&gt;64&quot;) &gt; 0:</span><br><span class="line">        lines = datas[i:]</span><br><span class="line">        break</span><br><span class="line">flag = &#123;&#125;</span><br><span class="line"># 用正则匹配</span><br><span class="line">macth1 = re.compile(r&quot;LIMIT 0,1\),(\d*?),1\)\)&gt;(\d*?) HTTP/1.1&quot;)</span><br><span class="line">macth2 = re.compile(r&#x27;&quot;HTTP&quot;,&quot;(\d*?)&quot;,&quot;HTTP/1.1 200 OK&#x27;)</span><br><span class="line">for i in range(0, len(lines), 2):  # 因为有返回响应, 所以步长为2</span><br><span class="line">    get1 = macth1.search(lines[i])</span><br><span class="line">    if get1:</span><br><span class="line">        key = int(get1.group(1))  # key保存字符的位置</span><br><span class="line">        value = int(get1.group(2))  # value保存字符的ascii编码</span><br><span class="line">        get2 = macth2.search(lines[i + 1])</span><br><span class="line">        if get2:</span><br><span class="line">            if int(get2.group(1)) &gt; 450:</span><br><span class="line">                value += 1</span><br><span class="line">        flag[key] = value  # 用字典保存flag</span><br><span class="line">f.close()</span><br><span class="line">result = &#x27;&#x27;</span><br><span class="line">for value in flag.values():</span><br><span class="line">    result += chr(value)</span><br><span class="line">print(result)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>根据题目进行脚本的修改）</p>
+<p>下面是日志审计的脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># coding:utf-8</span><br><span class="line">import re</span><br><span class="line">import urllib</span><br><span class="line"> </span><br><span class="line">f = open(&#x27;access.log&#x27;, &#x27;r&#x27;)</span><br><span class="line">lines = f.readlines()</span><br><span class="line">datas = []</span><br><span class="line">for line in lines:</span><br><span class="line">    t = urllib.unquote(line)</span><br><span class="line"> # 过滤出与flag相关，正确的猜解，这里只收集正确的猜解，</span><br><span class="line"> 而测试字符的ascii = 最后一个正确的猜解的ascii +1（这是二分法的一个隐藏规律）</span><br><span class="line">    if &#x27;200 1765&#x27; in t and &#x27;flag&#x27; in t: </span><br><span class="line">        datas.append(t)</span><br><span class="line">flag_ascii = &#123;&#125;</span><br><span class="line">for data in datas:</span><br><span class="line">    matchObj = re.search(r&#x27;LIMIT 0,1\),(.*?),1\)\)&gt;(.*?) AND&#x27;, data)</span><br><span class="line">    if matchObj:</span><br><span class="line">        key = int(matchObj.group(1))</span><br><span class="line">        value = int(matchObj.group(2)) + 1</span><br><span class="line">        flag_ascii[key] = value  # 使用字典，保存最后一次猜解正确的ascii码</span><br><span class="line"> </span><br><span class="line">flag = &#x27;&#x27;</span><br><span class="line">for value in flag_ascii.values():</span><br><span class="line">    flag += chr(value)</span><br></pre></td></tr></table></figure>
+
+<p>另：作者对语句的注释如下：</p>
+<p>t = urllib.unquote(line)               就是将 文本进行 urldecode 解码</p>
+<p>if ‘200 1765’ in t and ‘flag’ in t   如果语句中有这两个字符串就直接将这个语句存入数组datas中datas.append(t)</p>
+<p>matchObj = re.search(r’LIMIT 0,1),(.<em>?),1))&gt;(.</em>?) AND’, data)   在date 中搜索符合 正则表达的 字符串并 将匹配的字符串存入变量 matchObj 中</p>
+<p>key = int(matchObj.group(1))    取变量matchObj 中 的第一个括号里的内容 （也就是上条语句中的 （.*?）中的内容）并转为10进制</p>
+<p>value = int(matchObj.group(2)) + 1  取变量matchObj 中 的第二个括号里的内容，并转为 10 进制</p>
+<p>5．usb流量分析</p>
+<p>usb流量分析，包括usb键盘流量，usb鼠标流量</p>
+<p>键盘流量数据为 8个字节</p>
+<p>BYTE1 – 特殊按键</p>
+<p>​    |–bit0:  Left Control是否按下，按下为1  </p>
+<p>​    |–bit1:  Left Shift  是否按下，按下为1  </p>
+<p>​    |–bit2:  Left Alt   是否按下，按下为1  </p>
+<p>​    |–bit3:  Left GUI（Windows键） 是否按下，按下为1  </p>
+<p>​    |–bit4:  Right Control是否按下，按下为1  </p>
+<p>​    |–bit5:  Right Shift  是否按下，按下为1  </p>
+<p>​    |–bit6:  Right Alt   是否按下，按下为1  </p>
+<p>​    |–bit7:  Right GUI   是否按下，按下为1</p>
+<p>具体的键位映射关系可参考：《USB键盘协议中键码》中的HID Usage ID，链接：<a target="_blank" rel="noopener" href="https://wenku.baidu.com/view/9050c3c3af45b307e971971e.html">https://wenku.baidu.com/view/9050c3c3af45b307e971971e.html</a> </p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps9719.tmp.jpg" alt="img"></p>
+<p>如上图所示击键信息为0x05，对应的按键为“B“。</p>
+<p>鼠标流量数据为 4个字节 </p>
+<p> 第一个字节代表按键，当取0x00时，代表没有按键、为0x01时，代表按左键，为0x02时，代表当前按键为右键。第二个字节可以看成是一个signed byte类型，其最高位为符号位，当这个值为正时，代表鼠标水平右移多少像素，为负时，代表水平左移多少像素。第三个字节与第二字节类似，代表垂直上下移动的偏移。</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsBD50.tmp.jpg" alt="img"></p>
+<p>如上图所示数据信息为0x00002000，表示鼠标垂直向上移动20。</p>
+<p>方法：</p>
+<ol>
+<li><p>使用kali linux中的tshark 命令把cap data提取出来：tshark -r usb.pcap -T fields -e usb.capdata &gt; usbdata.txt，并去除空行。</p>
+</li>
+<li><p>根据usb协议鼠标数据还原鼠标移动轨迹。</p>
+</li>
+</ol>
+<p>键盘流量数据包转换脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">mappings = &#123; 0x04:&quot;A&quot;,  0x05:&quot;B&quot;,  0x06:&quot;C&quot;, 0x07:&quot;D&quot;, 0x08:&quot;E&quot;, 0x09:&quot;F&quot;, 0x0A:&quot;G&quot;,</span><br><span class="line"></span><br><span class="line">0x0B:&quot;H&quot;, 0x0C:&quot;I&quot;,  0x0D:&quot;J&quot;, 0x0E:&quot;K&quot;, 0x0F:&quot;L&quot;, 0x10:&quot;M&quot;, 0x11:&quot;N&quot;,0x12:&quot;O&quot;, </span><br><span class="line"></span><br><span class="line">0x13:&quot;P&quot;, 0x14:&quot;Q&quot;, 0x15:&quot;R&quot;, 0x16:&quot;S&quot;, 0x17:&quot;T&quot;, 0x18:&quot;U&quot;,0x19:&quot;V&quot;, 0x1A:&quot;W&quot;, 0x1B:&quot;X&quot;,</span><br><span class="line"></span><br><span class="line">0x1C:&quot;Y&quot;, 0x1D:&quot;Z&quot;, 0x1E:&quot;1&quot;, 0x1F:&quot;2&quot;, 0x20:&quot;3&quot;, 0x21:&quot;4&quot;, 0x22:&quot;5&quot;,  </span><br><span class="line"></span><br><span class="line">0x23:&quot;6&quot;, 0x24:&quot;7&quot;, 0x25:&quot;8&quot;, 0x26:&quot;9&quot;, 0x27:&quot;0&quot;, 0x28:&quot;\n&quot;, 0x2a:&quot;[DEL]&quot;,  0X2B:&quot;    &quot;, </span><br><span class="line"></span><br><span class="line">0x2C:&quot; &quot;,  0x2D:&quot;-&quot;, 0x2E:&quot;=&quot;, 0x2F:&quot;[&quot;,  0x30:&quot;]&quot;,  0x31:&quot;\\&quot;, 0x32:&quot;~&quot;, 0x33:&quot;;</span><br><span class="line"></span><br><span class="line">&quot;,  0x34:&quot;&#x27;&quot;, 0x36:&quot;,&quot;,  0x37:&quot;.&quot; &#125;</span><br><span class="line">nums = []</span><br><span class="line">keys = open(&#x27;usbdata.txt&#x27;)</span><br><span class="line">for line in keys:</span><br><span class="line">    if line[0]!=&#x27;0&#x27; or line[1]!=&#x27;0&#x27; or line[3]!=&#x27;0&#x27; or line[4]!=&#x27;0&#x27; or line[9]!=&#x27;0&#x27; or line[10]!=&#x27;0&#x27; or </span><br><span class="line">    line[12]!=&#x27;0&#x27; or line[13]!=&#x27;0&#x27; or line[15]!=&#x27;0&#x27; or line[16]!=&#x27;0&#x27; or line[18]!=&#x27;0&#x27; or line[19]!=&#x27;0&#x27; or </span><br><span class="line">    line[21]!=&#x27;0&#x27; or line[22]!=&#x27;0&#x27;:</span><br><span class="line">         continue</span><br><span class="line">    nums.append(int(line[6:8],16))</span><br><span class="line">keys.close()</span><br><span class="line">output = &quot;&quot;</span><br><span class="line">for n in nums:</span><br><span class="line">    if n == 0 :</span><br><span class="line">        continue</span><br><span class="line">    if n in mappings:</span><br><span class="line">        output += mappings[n]</span><br><span class="line">    else:</span><br><span class="line">        output += &#x27;[unknown]&#x27;</span><br><span class="line">print &#x27;output :\n&#x27; + output</span><br></pre></td></tr></table></figure>
+
+<p>鼠标流量数据包转换脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">nums = [] </span><br><span class="line">keys = open(&#x27;data.txt&#x27;,&#x27;r&#x27;) </span><br><span class="line">posx = 0 </span><br><span class="line">posy = 0 </span><br><span class="line">for line in keys: </span><br><span class="line">if len(line) != 12 : </span><br><span class="line">     continue </span><br><span class="line">x = int(line[3:5],16) </span><br><span class="line">y = int(line[6:8],16) </span><br><span class="line">if x &gt; 127 : </span><br><span class="line">    x -= 256 </span><br><span class="line">if y &gt; 127 : </span><br><span class="line">    y -= 256 </span><br><span class="line">posx += x </span><br><span class="line">posy += y </span><br><span class="line">btn_flag = int(line[0:2],16)  # 1 for left , 2 for right , 0 for nothing </span><br><span class="line">if btn_flag == 1 : </span><br><span class="line">    print posx , posy </span><br><span class="line">keys.close()</span><br></pre></td></tr></table></figure>
+
+<p>6 . WiFi无线密码破解</p>
+<p>方法：</p>
+<ol>
+<li><p>观察流量包，注意WAP的四次握手过程，即EAPOL协议的包，存在握手过程，进行爆破：（判断是否数据这样的解题类型）</p>
+</li>
+<li><p>利用crunch生成一个字典（Linux环境下）具体用法参见linux命令使用手册</p>
+</li>
+<li><p>利用aircrack-ng进行爆破</p>
+</li>
+</ol>
+<p>7．webshell上传</p>
+<p>方法：Webshell文件上传常采用post方法请求，文件内容常见关键字eval，system，assert要。获取流量包中记录的webshell可通过wireshark筛选出POST请求和关键字.</p>
+<p>命令：http.request.method==”POST” &amp;&amp; http contains == “关键字”</p>
+<p>8．后台账号爆破</p>
+<p>WEB账号登陆页面通常采用post方法请求，要获取流量包中记录的账号信息可通过wireshark筛选出POST请求和账号中的关键字如‘admin’。</p>
+<p>相关命令：http.request.method==”POST” &amp;&amp; http contains == “关键字”。</p>
+<p>9．后台目录爆破</p>
+<p>要获取流量包中记录的后台地址，可通过wireshark筛选后台url特征来得知。</p>
+<p>相关命令：http contains “后台url特征”。</p>
+<p>10．web扫描分析</p>
+<p>常见的WEB扫描器有Awvs，Netsparker，Appscan，Webinspect，Rsas（绿盟极光），Nessus，WebReaver，Sqlmap等。要识别攻击者使用的是哪一种扫描器，可通过wireshark筛选扫描器特征来得知。</p>
+<p>相关命令：http contains “扫描器特征值”。</p>
+<p>附常见扫描器特征参考：<a target="_blank" rel="noopener" href="https://www.freebuf.com/column/156291.htm">https://www.freebuf.com/column/156291.htm</a></p>
+<p>三. 例题</p>
+<ol>
+<li>菜刀666</li>
+</ol>
+<p>​        来源：BUUCTF   <a target="_blank" rel="noopener" href="https://buuoj.cn/challenges#%E8%8F%9C%E5%88%80666">https://buuoj.cn/challenges#%E8%8F%9C%E5%88%80666</a></p>
+<p>​        解题思路及步骤：</p>
+<p>​            1）由题目菜刀，判断上传方式为post，因此构造过滤语</p>
+<p>​                句,http.request.method==POST，追踪TCP流</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsE72F.tmp.jpg" alt="img"></p>
+<p>​            2）发现这个数据包长度较大，猜测有数据，和其他数据包比较发现果然存在上传地址</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsE72F.tmp.jpg"></p>
+<p>​            3）z1拿去base64解密发现一个上传路径，且上传的是一个png图片，z2以FFD8    开头，这个开头一看就是png，因此将z2拿去winhex保存</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps238E.tmp.jpg" alt="img"></p>
+<p>​            4）password，推测图片下可能隐藏内容，linux下binwalk，但是图片什么都没包含，反过来看数据包，发现还上传了zip和txt文件，直接保存把题目的数据包再分离试试</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps4186.tmp.jpg" alt="img"></p>
+<p>​            5）得到zip压缩包和txt文件</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps76FF.tmp.jpg" alt="img"></p>
+<p>​                flag{3OpWdJ-JP6FzK-koCMAK-VkfWBq-75Un2z}</p>
+<ol start="2">
+<li>日志分析</li>
+</ol>
+<p>​        来源：闽盾杯</p>
+<p>​        解题思路及步骤：</p>
+<p>​            1）对整个文档进行url解码，得到：</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps3F44.tmp.jpg" alt="img"></p>
+<p>​            2）去掉2.txt中GET之前的赘余信息，由最后一条数据结果，判断页面长度为678的为返回错误的界面，则675表示正确页面：</p>
+<p>​                <img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsD5DA.tmp.jpg" alt="img"></p>
+<p>​            3）由838行可知，开始判断字段名：</p>
+<p>​            <img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps8055.tmp.jpg" alt="img"> </p>
+<p>​            4）由此判断securiy表中的第一个字段为id：</p>
+<p><img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsD627.tmp.jpg" alt="img"> </p>
+<p>类似可得出第二三个字段为：user password</p>
+<p>​            5）由858行到最后判断出用户名为admin，密码为ngjfdsUbdK</p>
+<p>​            <img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsB8A9.tmp.jpg" alt="img"> </p>
+<p>flag即：flag{ngjfdsUbdK}</p>
+<ol start="3">
+<li>webshell后门</li>
+</ol>
+<p>​    来源：BUUCTF <a target="_blank" rel="noopener" href="https://buuoj.cn/challenges#webshell%E5%90%8E%E9%97%A8">https://buuoj.cn/challenges#webshell%E5%90%8E%E9%97%A8</a></p>
+<p>​    解题思路及步骤：</p>
+<p>​        1）D盾扫描文件</p>
+<p>​                <img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wpsE47D.tmp.jpg" alt="img">             </p>
+<p>​        2）打开大马的文件，发现pass,该字段即flag</p>
+<p>​                <img src="https://raw.githubusercontent.com/guwaneme/img/master/img/wps14.tmp.jpg" alt="img"> </p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2022/04/05/ctf/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2022/04/05/ctf/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

